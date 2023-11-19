@@ -1,0 +1,11 @@
+//REM
+@function rem($px) {
+	$result:$px / 16;
+	@return #{$result}rem;
+}
+
+ //EM
+@function em($px, $current: 16) {
+	$result: math.div($px, $current);
+	@return #{$result}em;
+}
