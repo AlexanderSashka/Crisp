@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Home</title>
     <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__logo">
+            <img src="/img/logo/logo.svg" alt="Logo" />
+          </div>
+          <div class="header__content">
+            <div class="header__navigation">
+              <div class="header__menu menu">
+                <nav class="menu__body">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href="" class="menu__link _active">home</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="menu__link">Shop</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="menu__link">blog</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="menu__link">Sale</a>
+                    </li>
+                    <li class="menu__item">
+                      <a href="" class="menu__link">contact us</a>
+                    </li>
+                  </ul>
+                </nav>
+                <button type="button" class="menu__icon icon-menu">
+                  <span></span>
+                </button>
+              </div>
+              <button type="button" class="header__search">search</button>
+            </div>
+            <div class="header__actions actions-header">
+              <ul class="actions-header__auth auth-header">
+                <li class="auth-header__item">
+                  <a href="#" class="auth-header__link">SIGN IN</a>
+                </li>
+                <li class="auth-header__item">
+                  <a href="#" class="auth-header__link">CREATE AN ACCOUNT</a>
+                </li>
+              </ul>
+              <div class="actions-header__fav-cart">
+                <a href="#" class="actions-header__favorite">
+                  <img src="/img/icons/favorites.svg" alt="Icon" />
+                </a>
+                <a href="#" class="actions-header__cart">
+                  <img src="/img/icons/cart.svg" alt="Icon" />
+                  <div class="actions-header__text">
+                    <div class="actions-header__label">Shopping Cart</div>
+                    <div class="actions-header__total">0,00 EUR</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main></main>
+      <footer></footer>
+    </div>
+    <div class="modal">
+      <div class="modal__content">
+        <form action="#" class="modal__form">
+          <div class="modal__row">
+            <input
+              type="search"
+              autocomplete="off"
+              name="search"
+              placeholder="Angels malu zip jeans slim black"
+              class="modal__input"
+            />
+          </div>
+          <button type="button" class="modal__close"></button>
+        </form>
+      </div>
+    </div>
+    <script src="/js/index.js"></script>
   </body>
 </html>
