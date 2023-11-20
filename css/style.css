@@ -628,16 +628,17 @@ body {
     display: none;
   }
 }
-.auth-header__image {
+.auth-header__image-link {
+  display: inline-block;
   width: 1.375rem;
   height: 1.375rem;
 }
 @media (min-width: 37.5em) {
-  .auth-header__image {
+  .auth-header__image-link {
     display: none;
   }
 }
-.auth-header__image img {
+.auth-header__image-link img {
   width: 100%;
 }
 

@@ -384,9 +384,10 @@ body {
     }
   }
 
-  // .auth-header__image
+  // .auth-header__image-link
 
-  &__image {
+  &__image-link {
+    display: inline-block;
     width: rem(22);
     height: rem(22);
     @media (min-width: em(600)) {
