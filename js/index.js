@@ -45,7 +45,7 @@ window.addEventListener('resize', function (event) {
 		}
 	} else {
 		if (item.classList.contains('done')) {
-			parent_original.insertBefore(item, parent_original.children[2]);
+			parent_original.insertBefore(item, parent_original.children[0]);
 			item.classList.remove('done');
 		}
 	}

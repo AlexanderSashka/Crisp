@@ -93,7 +93,7 @@ body {
       column-gap: rem(15);
     }
     @media (max-width: em(991.98)) {
-      grid-template-columns: rem(300) rem(130);
+      grid-template-columns: rem(300) rem(115);
     }
     @media (max-width: em(767.98)) {
       grid-template-columns: rem(80) rem(80);
@@ -334,9 +334,6 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: rem(11);
-    flex: 0 0 rem(30);
-    width: rem(30);
-    height: rem(30);
     img {
       transition: transform 0.3s;
     }
@@ -344,6 +341,11 @@ body {
       &:hover img {
         transform: translate(0, rem(-5));
       }
+    }
+    @media (max-width: em(767.98)) {
+      flex: 0 0 rem(30);
+      width: rem(30);
+      height: rem(30);
     }
   }
 
