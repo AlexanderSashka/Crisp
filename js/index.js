@@ -49,4 +49,4 @@ window.addEventListener('resize', function (event) {
 			item.classList.remove('done');
 		}
 	}
-	})
+});
