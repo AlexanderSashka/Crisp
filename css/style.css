@@ -632,10 +632,11 @@ body {
   display: inline-block;
   width: 1.375rem;
   height: 1.375rem;
+  display: none;
 }
-@media (min-width: 37.5em) {
+@media (max-width: 37.5em) {
   .auth-header__image-link {
-    display: none;
+    display: block;
   }
 }
 .auth-header__image-link img {

@@ -390,8 +390,9 @@ body {
     display: inline-block;
     width: rem(22);
     height: rem(22);
-    @media (min-width: em(600)) {
-      display: none;
+    display: none;
+    @media (max-width: em(600)) {
+      display: block;
     }
     img {
       width: 100%;
