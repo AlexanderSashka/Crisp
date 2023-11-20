@@ -62,7 +62,7 @@ body {
       grid-template-columns: rem(100) 1fr;
     }
     @media (max-width: em(600)) {
-      grid-template-columns: rem(80) 1fr;
+      grid-template-columns: rem(70) 1fr;
       column-gap: rem(10);
     }
   }
@@ -96,11 +96,11 @@ body {
       grid-template-columns: rem(300) rem(130);
     }
     @media (max-width: em(767.98)) {
-      grid-template-columns: rem(250) rem(70);
+      grid-template-columns: rem(80) rem(80);
     }
-    @media (max-width: em(599.98)) {
-      grid-template-columns: rem(130) rem(60);
-    }
+    // @media (max-width: em(599.98)) {
+    //   grid-template-columns: rem(130) rem(60);
+    // }
   }
 
   // .header__navigation
@@ -118,9 +118,6 @@ body {
     @media (max-width: em(767.98)) {
       column-gap: rem(15);
     }
-    @media (max-width: em(600)) {
-      column-gap: rem(10);
-    }
   }
 
   // .header__menu
@@ -133,10 +130,13 @@ body {
   &__search {
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: rem(7);
     text-transform: uppercase;
     position: relative;
     z-index: 2;
+    width: rem(30);
+    height: rem(30);
     @media (any-hover: hover) {
       &:hover:before {
         transform: translate(0, rem(-5));
@@ -230,6 +230,11 @@ body {
       row-gap: rem(25);
       justify-content: center;
     }
+    @media (max-width: em(767.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(25);
+      }
+    }
   }
 
   // .menu__item
@@ -286,6 +291,14 @@ body {
     display: flex;
     align-items: center;
     column-gap: rem(15);
+    @media (max-width: em(767.98)) {
+      justify-content: center;
+      column-gap: rem(20);
+    }
+    @media (max-width: em(500)) {
+      flex-direction: column;
+      row-gap: rem(25);
+    }
   }
 
   // .actions-header__fav-cart
@@ -299,6 +312,11 @@ body {
   // .actions-header__favorite
 
   &__favorite {
+    width: rem(30);
+    height: rem(30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
       transition: transform 0.3s;
     }
@@ -313,8 +331,12 @@ body {
 
   &__cart {
     display: flex;
+    justify-content: center;
     align-items: center;
     column-gap: rem(11);
+    flex: 0 0 rem(30);
+    width: rem(30);
+    height: rem(30);
     img {
       transition: transform 0.3s;
     }
@@ -377,11 +399,14 @@ body {
       background-color: #eb5757;
       transition: width 0.3s;
     }
-    @media (max-width: em(599.98)) {
-      span {
-        display: none;
-      }
+    @media (max-width: em(767.98)) {
+      font-size: rem(25);
     }
+    // @media (max-width: em(599.98)) {
+    //   span {
+    //     display: none;
+    //   }
+    // }
   }
 
   // .auth-header__image-link
