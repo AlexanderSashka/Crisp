@@ -86,11 +86,10 @@ button {
   transition: all 0.3s;
   z-index: 55;
 }
-.modal.modal-open {
+.modal-open .modal {
   opacity: 1;
   visibility: visible;
   top: 0;
-  z-index: 51;
 }
 .modal__content {
   color: #000000;
@@ -457,6 +456,14 @@ body {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
   margin: 0 auto;
+}
+
+.menu-open {
+  overflow: hidden;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 .header {

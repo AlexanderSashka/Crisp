@@ -21,19 +21,22 @@ const search = document.querySelector('.header__search'),
  modalClose = document.querySelector('.modal__close');
 
 search.addEventListener('click', () => {
-	modal.classList.add('modal-open');
+	// modal.classList.add('modal-open');
+	document.documentElement.classList.add('modal-open');
+	// document.documentElement.style.overflow = "hidden"; 
 });
 modalClose.addEventListener('click', () => {
-	modal.classList.remove('modal-open')
+	// modal.classList.remove('modal-open');
+	document.documentElement.classList.remove('modal-open');
+	// document.documentElement.style.overflow = "visible"; 
 });
 
 document.body.addEventListener('click', (e) => {
 	if (e.target.classList.contains('modal')) {
-		modal.classList.remove('modal-open')
+		document.documentElement.classList.remove('modal-open')
+		// document.documentElement.style.overflow = "visible"; 
 	}
 });
-
-
 //========================================================================================================================================================
 (function () {
 	let original_positions = [];
