@@ -188,7 +188,6 @@ button {
 .swiper {
   margin-left: auto;
   margin-right: auto;
-  position: relative !important;
 }
 
 .swiper-bg {
@@ -222,6 +221,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
@@ -340,11 +342,11 @@ button {
   z-index: -1;
   max-width: 26rem;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 61.99875em) {
   .swiper-slide__image_position {
-    -webkit-transform: translate(10.432692%, 0);
-        -ms-transform: translate(10.432692%, 0);
-            transform: translate(10.432692%, 0);
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 .swiper-slide__image img {
