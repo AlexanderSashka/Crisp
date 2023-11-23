@@ -205,17 +205,8 @@ button {
 }
 
 .swiper-slide {
-  padding: 2.8125rem 1.25rem;
-}
-@media (max-width: 75em) {
-  .swiper-slide {
-    padding: 1.25rem 0.9375rem 2.8125rem 0.9375rem;
-  }
-}
-@media (max-width: 61.99875em) {
-  .swiper-slide {
-    padding-bottom: 3.4375rem;
-  }
+  position: relative;
+  padding: 2.1875rem 1.25rem 3.4375rem 1.25rem;
 }
 .swiper-slide__content {
   display: -webkit-box;
@@ -312,6 +303,11 @@ button {
 @media (max-width: 47.99875em) {
   .swiper-slide__title {
     font-size: 1.875rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .swiper-slide__title {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 47.99875em) {
@@ -412,6 +408,12 @@ button {
      -moz-column-gap: 0.5rem;
           column-gap: 0.5rem;
   bottom: 0.625rem !important;
+}
+@media (max-width: 47.99875em) {
+  .swiper-pagination {
+    bottom: 0.1875rem !important;
+    padding-left: 0.625rem;
+  }
 }
 
 .swiper-pagination-bullet {
