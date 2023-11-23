@@ -1,4 +1,4 @@
-
+window.addEventListener('DOMContentLoaded', () => {
 // document.addEventListener('click', function (e) {
 // 	const targetElement = e.target;
 
@@ -176,3 +176,4 @@ document.body.addEventListener('click', (e) => {
 		 // Дополнительные действия при адаптации
 	}
 })();
+});
