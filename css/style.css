@@ -1098,7 +1098,7 @@ body {
 }
 @media (max-width: 31.25em) {
   .offers__items {
-    gap: 0.9375rem;
+    gap: 9.375rem;
   }
 }
 .offers__item {
