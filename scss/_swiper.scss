@@ -31,9 +31,9 @@
 .swiper-slide {
   position: relative;
   padding: rem(35) rem(20) rem(55) rem(20);
-  // @media (max-width: em(1200)) {
-  //   padding: rem(20) rem(15) rem(45) rem(15);
-  // }
+  @media (max-width: em(767.98)) {
+    padding: rem(20) rem(20) rem(55) rem(20);
+  }
   // .swiper-slide__content
 
   &__content {

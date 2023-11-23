@@ -112,5 +112,23 @@
     &:not(:last-child) {
       margin-bottom: rem(19);
     }
+    @media (max-width: em(767.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(35);
+      }
+    }
+  }
+
+  // .page__brands
+
+  &__brands {
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  // .page__offers
+
+  &__offers {
   }
 }
