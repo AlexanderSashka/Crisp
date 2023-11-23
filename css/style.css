@@ -1091,6 +1091,16 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 47.99875em) {
+  .offers__items {
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .offers__items {
+    gap: 0.9375rem;
+  }
+}
 .offers__item {
   position: relative;
   display: -webkit-box;
