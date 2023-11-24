@@ -105,8 +105,8 @@
   }
 }
 //========================================================================================================================================================
-.page {
-  // .page__main
+.home-page {
+  // .home-page__main
 
   &__main {
     &:not(:last-child) {
@@ -119,7 +119,7 @@
     }
   }
 
-  // .page__brands
+  // .home-page__brands
 
   &__brands {
     &:not(:last-child) {
@@ -127,8 +127,19 @@
     }
   }
 
-  // .page__offers
+  // .home-page__offers
 
   &__offers {
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+  }
+
+  // .home-page__catalog
+
+  &__catalog {
+    &:not(:last-child) {
+      margin-bottom: rem(24);
+    }
   }
 }
