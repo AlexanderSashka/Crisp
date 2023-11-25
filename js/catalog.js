@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', async () => {
  
 	async function getLocalData() {
 	  try {
-		 const response = await fetch('/data.json');
+		 const response = await fetch('./data.json');
 		 const data = await response.json();
  
 		 renderItems(data);
