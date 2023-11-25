@@ -156,6 +156,7 @@
   bottom: 0;
   right: 0;
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   column-gap: rem(3);
   width: rem(100);
@@ -181,10 +182,13 @@
 }
 .swiper-button-next {
   &::after {
-    transform: rotate(-180deg);
+    // transform: rotate(-180deg);
   }
 }
 .swiper-button-prev {
+  &::after {
+    transform: rotate(-180deg);
+  }
 }
 .swiper-pagination {
   width: rem(200) !important;
