@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "image": "./img/catalog-home/01.jpg",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "139,00 EUR"
+  },
+  {
+    "id": 2,
+    "image": "./img/catalog-home/02.jpg",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "235,00 EUR"
+  },
+  {
+    "id": 3,
+    "image": "./img/catalog-home/03.jpg",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "139,00 EUR"
+  },
+  {
+    "id": 4,
+    "image": "./img/catalog-home/04.jpg",
+    "discount": "-30%",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "139,00 EUR",
+    "priceActualColor": "139,00 EUR",
+    "priceDiscount": "119,00 EUR"
+  },
+  {
+    "id": 5,
+    "image": "./img/catalog-home/05.jpg",
+    "discount": "-30%",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "139,00 EUR",
+    "priceActualColor": "139,00 EUR",
+    "priceDiscount": "119,00 EUR"
+  },
+  {
+    "id": 6,
+    "image": "./img/catalog-home/06.jpg",
+    "discount": "-30%",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "139,00 EUR",
+    "priceActualColor": "139,00 EUR",
+    "priceDiscount": "119,00 EUR"
+  },
+  {
+    "id": 7,
+    "image": "./img/catalog-home/07.jpg",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "139,00 EUR"
+  },
+  {
+    "id": 8,
+    "image": "./img/catalog-home/08.jpg",
+    "title": "TOP women",
+    "text": "Angels malu zip jeans slim black used ",
+    "priceActual": "139,00 EUR"
+  }
+]

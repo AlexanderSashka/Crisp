@@ -142,4 +142,91 @@
       margin-bottom: rem(24);
     }
   }
+
+  // .home-page__shoping
+
+  &__shoping {
+  }
+}
+
+//========================================================================================================================================================
+.shoping {
+  // .shoping__container
+
+  &__container {
+  }
+
+  // .shoping__content
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  // .shoping__body
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    padding-top: rem(96);
+    padding-bottom: rem(78);
+    padding-left: rem(269);
+    max-width: rem(640);
+  }
+
+  // .shoping__bg
+
+  &__bg {
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+  }
+
+  // .shoping__title
+
+  &__title {
+    font-size: rem(56);
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: rem(17);
+    }
+    &::before {
+      content: "";
+      display: inline-block;
+      background: url("../img/shoping/decore.svg") 0 0 no-repeat;
+      width: rem(602);
+      height: rem(100);
+      position: absolute;
+      top: rem(-20);
+      left: rem(35);
+    }
+  }
+
+  // .shoping__text
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: rem(25);
+    letter-spacing: rem(0.25);
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: rem(10);
+      }
+    }
+  }
+
+  // .shoping__button
+
+  &__button {
+  }
 }
