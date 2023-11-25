@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', async () => {
  
 	async function getLocalData() {
 	  try {
-		 const response = await fetch('./data.json');
+		 const response = await fetch('data.json');
 		 const data = await response.json();
  
 		 renderItems(data);
@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 		 article.classList.add('catalog-home__item');
 		 article.innerHTML = 
 		 `
-		 <a href="#" class="catalog-home__image">	
+		 <a href="#" class="catalog-home__image">
 			<img src="${item.image}" alt="Image" />
 		 </a>
 		 ${item.discount ? `<div class="catalog-home__discount">${item.discount}</div>` : ''}
