@@ -1,318 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
-          <div class="header__logo">
-            <img src="./img/logo/logo.svg" alt="Logo" />
-          </div>
-          <div class="header__content">
-            <div class="header__navigation">
-              <div class="header__menu menu">
-                <nav class="menu__body">
-                  <ul class="menu__list">
-                    <li class="menu__item">
-                      <a href="" class="menu__link _active">home</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">Shop</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">blog</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">Sale</a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="" class="menu__link">contact us</a>
-                    </li>
-                  </ul>
-                </nav>
-                <button type="button" class="menu__icon icon-menu">
-                  <span></span>
-                </button>
-              </div>
-              <button type="button" class="header__search">
-                <span>search</span>
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./img/logo/logo.svg" alt="Logo" />
+        </div>
+        <div class="header__content">
+          <div class="header__navigation">
+            <div class="header__menu menu">
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="" class="menu__link _active">home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__link">Shop</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__link">blog</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__link">Sale</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__link">contact us</a>
+                  </li>
+                </ul>
+              </nav>
+              <button type="button" class="menu__icon icon-menu">
+                <span></span>
               </button>
             </div>
-            <div class="header__actions actions-header">
-              <ul data-da="menu__body,last,768" class="actions-header__auth auth-header">
-                <li class="auth-header__item">
-                  <!-- <a href="#" class="auth-header__image-link">
+            <button type="button" class="header__search">
+              <span>search</span>
+            </button>
+          </div>
+          <div class="header__actions actions-header">
+            <ul data-da="menu__body,last,768" class="actions-header__auth auth-header">
+              <li class="auth-header__item">
+                <!-- <a href="#" class="auth-header__image-link">
                     <img src="./img/icons/sign-in.svg" alt="Icon" />
                   </a> -->
-                  <a href="#" class="auth-header__link"><span>SIGN IN</span></a>
-                </li>
-                <li class="auth-header__item">
-                  <!-- <a href="#" class="auth-header__image-link">
+                <a href="#" class="auth-header__link"><span>SIGN IN</span></a>
+              </li>
+              <li class="auth-header__item">
+                <!-- <a href="#" class="auth-header__image-link">
                     <img src="./img/icons/create.svg" alt="Icon" />
                   </a> -->
-                  <a href="#" class="auth-header__link"><span>CREATE AN ACCOUNT</span></a>
-                </li>
-              </ul>
-              <div class="actions-header__fav-cart">
-                <a href="#" class="actions-header__favorite">
-                  <img src="./img/icons/favorites.svg" alt="Icon" />
-                </a>
-                <a href="#" class="actions-header__cart">
-                  <img src="./img/icons/cart.svg" alt="Icon" />
-                  <div class="actions-header__text">
-                    <div class="actions-header__label">Shopping Cart</div>
-                    <div class="actions-header__total">0,00 EUR</div>
-                  </div>
-                </a>
-              </div>
+                <a href="#" class="auth-header__link"><span>CREATE AN ACCOUNT</span></a>
+              </li>
+            </ul>
+            <div class="actions-header__fav-cart">
+              <a href="#" class="actions-header__favorite">
+                <img src="./img/icons/favorites.svg" alt="Icon" />
+              </a>
+              <a href="#" class="actions-header__cart">
+                <img src="./img/icons/cart.svg" alt="Icon" />
+                <div class="actions-header__text">
+                  <div class="actions-header__label">Shopping Cart</div>
+                  <div class="actions-header__total">0,00 EUR</div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-      </header>
-      <main class="home-page">
-        <section class="home-page__main main">
-          <div class="main__container">
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-              <!-- <div class="swiper-bg">
+      </div>
+    </header>
+    <main class="home-page">
+      <section class="home-page__main main">
+        <div class="main__container">
+          <!-- Swiper -->
+          <div class="swiper mySwiper" id="mySwiper1">
+            <!-- <div class="swiper-bg">
                 <img src="./img/main/bg.jpg" alt="Image" />
               </div> -->
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="swiper-bg">
-                    <img src="./img/main/bg.jpg" alt="Image" />
-                  </div>
-                  <div class="swiper-slide__content">
-                    <div class="swiper-slide__info">
-                      <h1 class="swiper-slide__title">SUMMER SALE GEt 40% OFF On all dress.</h1>
-                      <a href="#" class="swiper-slide__button button">shop now</a>
-                    </div>
-                    <div class="swiper-slide__images">
-                      <div class="swiper-slide__image swiper-slide__image_position">
-                        <img src="./img/main/01.jpg" alt="Image" />
-                      </div>
-                      <div class="swiper-slide__image">
-                        <img src="./img/main/02.jpg" alt="Image" />
-                      </div>
-                    </div>
-                  </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-bg">
+                  <img src="./img/main/bg.jpg" alt="Image" />
                 </div>
-                <div class="swiper-slide">
-                  <div class="swiper-bg">
-                    <img src="./img/main/bg2.jpg" alt="Image" />
+                <div class="swiper-slide__content">
+                  <div class="swiper-slide__info">
+                    <h1 class="swiper-slide__title">SUMMER SALE GEt 40% OFF On all dress.</h1>
+                    <a href="#" class="swiper-slide__button button">shop now</a>
                   </div>
-                  <div class="swiper-slide__content">
-                    <div class="swiper-slide__info">
-                      <h1 class="swiper-slide__title">SUMMER SALE GEt 30%</h1>
-                      <a href="#" class="swiper-slide__button button">shop now</a>
+                  <div class="swiper-slide__images">
+                    <div class="swiper-slide__image swiper-slide__image_position">
+                      <img src="./img/main/01.jpg" alt="Image" />
                     </div>
-                    <div class="swiper-slide__images">
-                      <div class="swiper-slide__image swiper-slide__image_position">
-                        <img src="./img/main/01.jpg" alt="Image" />
-                      </div>
-                      <div class="swiper-slide__image">
-                        <img src="./img/main/02.jpg" alt="Image" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swiper-bg">
-                    <img src="./img/main/bg3.jpg" alt="Image" />
-                  </div>
-                  <div class="swiper-slide__content">
-                    <div class="swiper-slide__info">
-                      <h1 class="swiper-slide__title">SUMMER SALE GEt 40% OFF On all dress.</h1>
-                      <a href="#" class="swiper-slide__button button">shop now</a>
-                    </div>
-                    <div class="swiper-slide__images">
-                      <div class="swiper-slide__image swiper-slide__image_position">
-                        <img src="./img/main/01.jpg" alt="Image" />
-                      </div>
-                      <div class="swiper-slide__image">
-                        <img src="./img/main/02.jpg" alt="Image" />
-                      </div>
+                    <div class="swiper-slide__image">
+                      <img src="./img/main/02.jpg" alt="Image" />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-buttons">
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        <section class="home-page__brands brands">
-          <div class="brands__container">
-            <h2 class="brands__title">chose your brand</h2>
-            <div class="brands__items">
-              <a href="#" class="brands__item">
-                <img src="./img/brands/01.svg" alt="Icon" />
-              </a>
-              <a href="#" class="brands__item">
-                <img src="./img/brands/02.svg" alt="Icon" />
-              </a>
-              <a href="#" class="brands__item">
-                <img src="./img/brands/03.svg" alt="Icon" />
-              </a>
-              <a href="#" class="brands__item">
-                <img src="./img/brands/04.svg" alt="Icon" />
-              </a>
-              <a href="#" class="brands__item">
-                <img src="./img/brands/05.svg" alt="Icon" />
-              </a>
-              <a href="#" class="brands__item">
-                <img src="./img/brands/06.svg" alt="Icon" />
-              </a>
-              <a href="#" class="brands__item">
-                <img src="./img/brands/07.svg" alt="Icon" />
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="home-page__offers offers">
-          <div class="offers__container">
-            <div class="offers__items">
-              <div class="offers__item offers__item_position">
-                <div class="offers__image">
-                  <img src="./img/offers/01.jpg" alt="Image" />
+              <div class="swiper-slide">
+                <div class="swiper-bg">
+                  <img src="./img/main/bg2.jpg" alt="Image" />
                 </div>
-                <div class="offers__info">
-                  <h3 class="offers__title">choosе your look</h3>
-                  <div class="offers__text">
-                    <p>See our clothing collections</p>
+                <div class="swiper-slide__content">
+                  <div class="swiper-slide__info">
+                    <h1 class="swiper-slide__title">SUMMER SALE GEt 30%</h1>
+                    <a href="#" class="swiper-slide__button button">shop now</a>
                   </div>
-                  <a href="#" class="offers__button button">see offers</a>
+                  <div class="swiper-slide__images">
+                    <div class="swiper-slide__image swiper-slide__image_position">
+                      <img src="./img/main/01.jpg" alt="Image" />
+                    </div>
+                    <div class="swiper-slide__image">
+                      <img src="./img/main/02.jpg" alt="Image" />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="offers__item offers__item_size">
-                <div class="offers__image offers__image_size">
-                  <img src="./img/offers/02.jpg" alt="Image" />
+              <div class="swiper-slide">
+                <div class="swiper-bg">
+                  <img src="./img/main/bg3.jpg" alt="Image" />
                 </div>
-                <div class="offers__info offers__info_margin">
-                  <h3 class="offers__title offers__title_big">up to 40% off</h3>
-                  <div class="offers__text">
-                    <p>Special offers and great deals</p>
+                <div class="swiper-slide__content">
+                  <div class="swiper-slide__info">
+                    <h1 class="swiper-slide__title">SUMMER SALE GEt 40% OFF On all dress.</h1>
+                    <a href="#" class="swiper-slide__button button">shop now</a>
                   </div>
-                  <a href="#" class="offers__button button">shop now</a>
-                </div>
-              </div>
-              <div class="offers__item ">
-                <div class="offers__image">
-                  <img src="./img/offers/03.jpg" alt="Image" />
-                </div>
-                <div class="offers__info offers__info_margin">
-                  <h3 class="offers__title">brand new style</h3>
-                  <div class="offers__text">
-                    <p>Popular clothing brands</p>
+                  <div class="swiper-slide__images">
+                    <div class="swiper-slide__image swiper-slide__image_position">
+                      <img src="./img/main/01.jpg" alt="Image" />
+                    </div>
+                    <div class="swiper-slide__image">
+                      <img src="./img/main/02.jpg" alt="Image" />
+                    </div>
                   </div>
-                  <a href="#" class="offers__button button">see offers</a>
                 </div>
               </div>
             </div>
+            <div class="swiper-buttons">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-        </section>
-        <div class="home-page__catalog catalog-home">
-          <div class="catalog-home__container">
-            <aside class="catalog-home__filter filter-catalog-home">
-              <h3 class="filter-catalog-home__title">Shop Some Wear:</h3>
-              <form action="#" enctype="multipart/form-data" class="filter-catalog-home__form form-checkbox">
-                <div class="form-checkbox__row">
-                  <input id="c_1" class="form-checkbox__input" type="checkbox" value="" name="category_1" />
-                  <label for="c_1" class="form-checkbox__label">Best sellers</label>
+        </div>
+      </section>
+      <section class="home-page__brands brands">
+        <div class="brands__container">
+          <h2 class="brands__title">chose your brand</h2>
+          <div class="brands__items">
+            <a href="#" class="brands__item">
+              <img src="./img/brands/01.svg" alt="Icon" />
+            </a>
+            <a href="#" class="brands__item">
+              <img src="./img/brands/02.svg" alt="Icon" />
+            </a>
+            <a href="#" class="brands__item">
+              <img src="./img/brands/03.svg" alt="Icon" />
+            </a>
+            <a href="#" class="brands__item">
+              <img src="./img/brands/04.svg" alt="Icon" />
+            </a>
+            <a href="#" class="brands__item">
+              <img src="./img/brands/05.svg" alt="Icon" />
+            </a>
+            <a href="#" class="brands__item">
+              <img src="./img/brands/06.svg" alt="Icon" />
+            </a>
+            <a href="#" class="brands__item">
+              <img src="./img/brands/07.svg" alt="Icon" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="home-page__offers offers">
+        <div class="offers__container">
+          <div class="offers__items">
+            <div class="offers__item offers__item_position">
+              <div class="offers__image">
+                <img src="./img/offers/01.jpg" alt="Image" />
+              </div>
+              <div class="offers__info">
+                <h3 class="offers__title">choosе your look</h3>
+                <div class="offers__text">
+                  <p>See our clothing collections</p>
                 </div>
-                <div class="form-checkbox__row">
-                  <input id="c_2" class="form-checkbox__input" type="checkbox" value="" name="category_2" />
-                  <label for="c_2" class="form-checkbox__label">NEW Arivals</label>
+                <a href="#" class="offers__button button">see offers</a>
+              </div>
+            </div>
+            <div class="offers__item offers__item_size">
+              <div class="offers__image offers__image_size">
+                <img src="./img/offers/02.jpg" alt="Image" />
+              </div>
+              <div class="offers__info offers__info_margin">
+                <h3 class="offers__title offers__title_big">up to 40% off</h3>
+                <div class="offers__text">
+                  <p>Special offers and great deals</p>
                 </div>
-                <div class="form-checkbox__row">
-                  <input id="c_3" class="form-checkbox__input" type="checkbox" checked value="" name="category_3" />
-                  <label for="c_3" class="form-checkbox__label active">TOP women</label>
+                <a href="#" class="offers__button button">shop now</a>
+              </div>
+            </div>
+            <div class="offers__item ">
+              <div class="offers__image">
+                <img src="./img/offers/03.jpg" alt="Image" />
+              </div>
+              <div class="offers__info offers__info_margin">
+                <h3 class="offers__title">brand new style</h3>
+                <div class="offers__text">
+                  <p>Popular clothing brands</p>
                 </div>
-                <div class="form-checkbox__row">
-                  <input id="c_4" class="form-checkbox__input" type="checkbox" value="" name="category_4" />
-                  <label for="c_4" class="form-checkbox__label">Collection: Summer</label>
-                </div>
-                <div class="form-checkbox__row">
-                  <input id="c_5" class="form-checkbox__input" type="checkbox" value="" name="category_5" />
-                  <label for="c_5" class="form-checkbox__label">Collection: spring</label>
-                </div>
-                <div class="form-checkbox__row">
-                  <input id="c_6" class="form-checkbox__input" type="checkbox" value="" name="category_6" />
-                  <label for="c_6" class="form-checkbox__label">TREnding</label>
-                </div>
-              </form>
-            </aside>
-            <div class="catalog-home__content">
-              <div class="catalog-home__items"></div>
-              <div class="catalog-home__button">
-                <button type="button">Load more</button>
+                <a href="#" class="offers__button button">see offers</a>
               </div>
             </div>
           </div>
         </div>
-        <section class="home-page__shoping shoping">
-          <div class="shoping__container">
-            <div class="shoping__content">
-              <div class="shoping__body">
-                <h3 class="shoping__title">shoping without limits.</h3>
-                <div class="shoping__text">
-                  <p>
-                    You can choose the best option for you, and it does not matter whether you are in Prague or San Francisco. We will deliver your
-                    purchase anywhere!
-                  </p>
-                </div>
-                <button class="shoping__button button">shop now</button>
+      </section>
+      <div class="home-page__catalog catalog-home">
+        <div class="catalog-home__container">
+          <aside class="catalog-home__filter filter-catalog-home">
+            <h3 class="filter-catalog-home__title">Shop Some Wear:</h3>
+            <form action="#" enctype="multipart/form-data" class="filter-catalog-home__form form-checkbox">
+              <div class="form-checkbox__row">
+                <input id="c_1" class="form-checkbox__input" type="checkbox" value="" name="category_1" />
+                <label for="c_1" class="form-checkbox__label">Best sellers</label>
               </div>
-              <div class="shoping__bg">
-                <img src="./img/shoping/bg.jpg" alt="Image" />
+              <div class="form-checkbox__row">
+                <input id="c_2" class="form-checkbox__input" type="checkbox" value="" name="category_2" />
+                <label for="c_2" class="form-checkbox__label">NEW Arivals</label>
               </div>
+              <div class="form-checkbox__row">
+                <input id="c_3" class="form-checkbox__input" type="checkbox" checked value="" name="category_3" />
+                <label for="c_3" class="form-checkbox__label active">TOP women</label>
+              </div>
+              <div class="form-checkbox__row">
+                <input id="c_4" class="form-checkbox__input" type="checkbox" value="" name="category_4" />
+                <label for="c_4" class="form-checkbox__label">Collection: Summer</label>
+              </div>
+              <div class="form-checkbox__row">
+                <input id="c_5" class="form-checkbox__input" type="checkbox" value="" name="category_5" />
+                <label for="c_5" class="form-checkbox__label">Collection: spring</label>
+              </div>
+              <div class="form-checkbox__row">
+                <input id="c_6" class="form-checkbox__input" type="checkbox" value="" name="category_6" />
+                <label for="c_6" class="form-checkbox__label">TREnding</label>
+              </div>
+            </form>
+          </aside>
+          <div class="catalog-home__content">
+            <div class="catalog-home__items"></div>
+            <div class="catalog-home__button">
+              <button type="button">Load more</button>
             </div>
           </div>
-        </section>
-      </main>
-      <footer></footer>
-    </div>
-    <div class="modal">
-      <div class="modal__content">
-        <form action="#" class="modal__form">
-          <div class="modal__row">
-            <input type="search" autocomplete="off" name="search" placeholder="Angels malu zip jeans slim black" class="modal__input" />
-          </div>
-          <button type="button" class="modal__close"></button>
-        </form>
+        </div>
       </div>
+      <section class="home-page__shoping shoping">
+        <div class="shoping__container">
+          <div class="shoping__content">
+            <div class="shoping__body">
+              <h3 class="shoping__title">shoping without limits.</h3>
+              <div class="shoping__text">
+                <p>
+                  You can choose the best option for you, and it does not matter whether you are in Prague or San
+                  Francisco. We will deliver your
+                  purchase anywhere!
+                </p>
+              </div>
+              <a href="#" class="shoping__button button">shop now</a>
+            </div>
+            <div class="shoping__bg">
+              <img src="./img/shoping/bg.jpg" alt="Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-page__featured featured">
+        <div class="featured__container">
+          <h3 class="featured__title">Featured Items</h3>
+          <!-- Swiper -->
+          <div class="swiper" id="mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/01.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/02.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/03.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/04.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/05.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/06.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/07.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide swiper-slide_row slide-swiper">
+                <article class="slide-swiper__item item-slider">
+                  <div class="item-slider__image">
+                    <img src="./img/featured/08.jpg" alt="Image">
+                  </div>
+                  <div class="item-slider__info">
+                    <h4 class="item-slider__title">TOP women</h4>
+                    <div class="item-slider__text">
+                      <p>Angels malu zip jeans slim black used</p>
+                    </div>
+                    <div class="item-slider__price">139,00 EUR</div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination_style"></div>
+          </div>
+      </section>
+    </main>
+    <footer></footer>
+  </div>
+  <div class="modal">
+    <div class="modal__content">
+      <form action="#" class="modal__form">
+        <div class="modal__row">
+          <input type="search" autocomplete="off" name="search" placeholder="Angels malu zip jeans slim black"
+            class="modal__input" />
+        </div>
+        <button type="button" class="modal__close"></button>
+      </form>
     </div>
-    <script src="./js/index.js"></script>
-    <script src="./js/catalog.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </div>
+  <script src="./js/index.js"></script>
+  <script src="./js/catalog.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
+  <!-- Initialize Swiper -->
+  <script>
+    // Инициализируем первый слайдер
+    var swiperMain = new Swiper("#mySwiper1", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      // loop: true,
+      autoHeight: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    // Инициализируем второй слайдер (если нужно)
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper("#mySwiper2", {
+        // rewind: true,
         loop: true,
-        autoHeight:true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
