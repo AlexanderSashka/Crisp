@@ -152,16 +152,18 @@
   }
 }
 .swiper-buttons {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  column-gap: rem(3);
-  width: rem(100);
-  @media (max-width: em(767.98)) {
-    display: none;
+  &_none {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: rem(3);
+    width: rem(100);
+    @media (max-width: em(767.98)) {
+      display: none;
+    }
   }
 }
 .swiper-button-next,

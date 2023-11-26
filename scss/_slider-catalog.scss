@@ -1,26 +1,82 @@
 .swiper {
   width: 100%;
   height: 100%;
+  &_position {
+    width: 100% !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+  }
 }
-
+.swiper-wrapper {
+  width: 100% !important;
+}
 .swiper-slide {
   &_row {
-    width: rem(344) !important;
+    max-width: rem(344) !important;
+    width: 100% !important;
     padding: 0 !important;
     margin-right: rem(27) !important;
+    &.swiper-slide-active {
+      width: rem(344) !important;
+      padding: 0 !important;
+      margin-right: rem(27) !important;
+    }
+    &.swiper-slide-next {
+      width: rem(344) !important;
+      padding: 0 !important;
+      margin-right: rem(27) !important;
+    }
   }
 }
 
 .swiper-slide img {
-  //   display: block;
-  //   width: 100%;
-  //   height: 100%;
-  //   object-fit: cover;
+  //  display: block;
+  //  width: 100%;
+  //  height: 100%;
+  //  object-fit: cover;
 }
 
-.swiper {
+.swiper-buttons {
+  &_style {
+    position: absolute;
+    top: 0 !important;
+    right: 0 !important;
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: rem(4) !important;
+    width: rem(85) !important;
+    height: rem(40) !important;
+    z-index: 20;
+  }
 }
-.swiper-wrapper {
+
+.swiper-button-next {
+  &_style {
+    width: rem(40) !important;
+    height: rem(40) !important;
+    border: rem(2) solid #c4c4c4;
+    background-color: inherit;
+    &::after {
+      content: "" !important;
+      background: url("../img/icons/arrow-swiper.svg") 0 0 / 100% no-repeat !important;
+      width: rem(9) !important;
+      height: rem(15) !important;
+      transform: rotate(-180deg);
+    }
+  }
 }
-.swiper-slide {
+.swiper-button-prev {
+  &_style {
+    width: rem(40) !important;
+    height: rem(40) !important;
+    border: rem(2) solid #c4c4c4;
+    background-color: inherit;
+    transform: rotate(180deg);
+    &::after {
+      content: "" !important;
+      background: url("../img/icons/arrow-swiper.svg") 0 0 no-repeat !important;
+      width: rem(9) !important;
+      height: rem(15) !important;
+    }
+  }
 }

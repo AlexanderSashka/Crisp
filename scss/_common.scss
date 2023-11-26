@@ -146,6 +146,9 @@
   // .home-page__shoping
 
   &__shoping {
+    &:not(:last-child) {
+      margin-bottom: rem(77);
+    }
   }
 
   // .home-page__featured

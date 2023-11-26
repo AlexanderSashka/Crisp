@@ -193,6 +193,9 @@ button {
 .home-page__catalog:not(:last-child) {
   margin-bottom: 1.5rem;
 }
+.home-page__shoping:not(:last-child) {
+  margin-bottom: 4.8125rem;
+}
 .shoping__content {
   position: relative;
   display: -webkit-box;
@@ -506,7 +509,7 @@ button {
   width: 100%;
 }
 
-.swiper-buttons {
+.swiper-buttons_none {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -526,7 +529,7 @@ button {
   width: 6.25rem;
 }
 @media (max-width: 47.99875em) {
-  .swiper-buttons {
+  .swiper-buttons_none {
     display: none;
   }
 }
@@ -597,11 +600,83 @@ button {
   width: 100%;
   height: 100%;
 }
+.swiper_position {
+  width: 100% !important;
+  position: relative !important;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+.swiper-wrapper {
+  width: 100% !important;
+}
 
 .swiper-slide_row {
+  max-width: 21.5rem !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin-right: 1.6875rem !important;
+}
+.swiper-slide_row.swiper-slide-active {
   width: 21.5rem !important;
   padding: 0 !important;
   margin-right: 1.6875rem !important;
+}
+.swiper-slide_row.swiper-slide-next {
+  width: 21.5rem !important;
+  padding: 0 !important;
+  margin-right: 1.6875rem !important;
+}
+
+.swiper-buttons_style {
+  position: absolute;
+  top: 0 !important;
+  right: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-column-gap: 0.25rem !important;
+     -moz-column-gap: 0.25rem !important;
+          column-gap: 0.25rem !important;
+  width: 5.3125rem !important;
+  height: 2.5rem !important;
+  z-index: 20;
+}
+
+.swiper-button-next_style {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border: 0.125rem solid #c4c4c4;
+  background-color: inherit;
+}
+.swiper-button-next_style::after {
+  content: "" !important;
+  background: url("../img/icons/arrow-swiper.svg") 0 0/100% no-repeat !important;
+  width: 0.5625rem !important;
+  height: 0.9375rem !important;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.swiper-button-prev_style {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  border: 0.125rem solid #c4c4c4;
+  background-color: inherit;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.swiper-button-prev_style::after {
+  content: "" !important;
+  background: url("../img/icons/arrow-swiper.svg") 0 0 no-repeat !important;
+  width: 0.5625rem !important;
+  height: 0.9375rem !important;
 }
 
 body {
@@ -1684,6 +1759,13 @@ body {
   font-size: 1rem;
   color: #808080;
   text-decoration: line-through;
+}
+
+.featured__title {
+  font-size: 1.5rem;
+}
+.featured__title:not(:last-child) {
+  margin-bottom: 2.125rem;
 }
 
 .item-slider {

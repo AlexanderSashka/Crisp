@@ -146,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-buttons">
+            <div class="swiper-buttons swiper-buttons_none">
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
             </div>
@@ -285,9 +285,9 @@
       </section>
       <section class="home-page__featured featured">
         <div class="featured__container">
-          <h3 class="featured__title">Featured Items</h3>
           <!-- Swiper -->
-          <div class="swiper" id="mySwiper2">
+          <div class="swiper swiper_position" id="mySwiper2">
+            <h3 class="featured__title">Featured Items</h3>
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper-slide_row slide-swiper">
                 <article class="slide-swiper__item item-slider">
@@ -402,7 +402,11 @@
                 </article>
               </div>
             </div>
-            <div class="swiper-pagination swiper-pagination_style"></div>
+            <div class="swiper-buttons swiper-buttons_style">
+              <div class="swiper-button-next swiper-button-next_style"></div>
+              <div class="swiper-button-prev swiper-button-prev_style"></div>
+            </div>
+            <!-- <div class="swiper-pagination swiper-pagination_style"></div> -->
           </div>
       </section>
     </main>
@@ -445,8 +449,29 @@
     // Инициализируем второй слайдер (если нужно)
     document.addEventListener("DOMContentLoaded", function () {
       var swiper = new Swiper("#mySwiper2", {
-        // rewind: true,
+        slidesPerView: 3,
+        // centeredSlides: true,
+        spaceBetween: 40,
+        // grabCursor: true,
         loop: true,
+        breakpoints: {
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          500: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          }
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

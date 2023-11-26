@@ -985,6 +985,10 @@ body {
   // .featured__title
 
   &__title {
+    font-size: rem(24);
+    &:not(:last-child) {
+      margin-bottom: rem(34);
+    }
   }
 }
 .slide-swiper {
