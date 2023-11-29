@@ -149,6 +149,16 @@
     &:not(:last-child) {
       margin-bottom: rem(77);
     }
+    @media (max-width: em(991.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(50);
+      }
+    }
+    @media (max-width: em(767.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
   }
 
   // .home-page__featured
