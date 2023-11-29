@@ -206,6 +206,38 @@ button {
     margin-bottom: 1.875rem;
   }
 }
+.home-page__featured:not(:last-child) {
+  margin-bottom: 4.9375rem;
+}
+@media (max-width: 61.99875em) {
+  .home-page__featured:not(:last-child) {
+    margin-bottom: 3.125rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .home-page__featured:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+}
+.home-page__popular:not(:last-child) {
+  margin-bottom: 7.375rem;
+}
+@media (max-width: 61.99875em) {
+  .home-page__popular:not(:last-child) {
+    margin-bottom: 4.375rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .home-page__popular:not(:last-child) {
+    margin-bottom: 3.125rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .home-page__popular:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+}
+
 .shoping__content {
   position: relative;
   display: -webkit-box;
@@ -606,6 +638,9 @@ button {
   background-color: #000000 !important;
 }
 
+.catalog-swiper.swiper {
+  position: relative;
+}
 .catalog-swiper__title {
   font-size: 1.5rem;
 }
@@ -627,6 +662,10 @@ button {
   -webkit-column-gap: 0.25rem;
      -moz-column-gap: 0.25rem;
           column-gap: 0.25rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 .catalog-swiper__button.swiper-button-next, .catalog-swiper__button.swiper-button-prev {
   width: 2.5rem;
@@ -637,10 +676,18 @@ button {
   background-color: inherit;
   border: 0.125rem solid #828282;
 }
-.catalog-swiper__button.swiper-button-next::before, .catalog-swiper__button.swiper-button-next::after, .catalog-swiper__button.swiper-button-prev::before, .catalog-swiper__button.swiper-button-prev::after {
+.catalog-swiper__button.swiper-button-next::after, .catalog-swiper__button.swiper-button-prev::after {
   background: url("../img/icons/arrow-swiper.svg") 0 0 no-repeat;
   width: 0.5625rem;
   height: 0.375rem;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.catalog-swiper__button.swiper-button-prev {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .item-swiper__image {
@@ -669,6 +716,11 @@ button {
 .item-swiper__text {
   display: inline-block;
   font-weight: 300;
+}
+@media (any-hover: hover) {
+  .item-swiper__text:hover {
+    text-decoration: underline;
+  }
 }
 .item-swiper__text:not(:last-child) {
   margin-bottom: 1.125rem;

@@ -1,5 +1,6 @@
 .catalog-swiper {
   &.swiper {
+    position: relative;
   }
   //.catalog-swiper__title
   &__title {
@@ -36,7 +37,7 @@
     width: rem(85);
     height: rem(40);
     column-gap: rem(4);
-    //  flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
 
   // .catalog-swiper__button
@@ -49,12 +50,15 @@
       height: rem(40) !important;
       background-color: inherit;
       border: rem(2) solid #828282;
-      &::before,
       &::after {
         background: url("../img/icons/arrow-swiper.svg") 0 0 no-repeat;
         width: rem(9);
         height: rem(6);
+        transform: rotate(-180deg);
       }
+    }
+    &.swiper-button-prev {
+      transform: rotate(180deg);
     }
   }
 }
@@ -98,6 +102,11 @@
   &__text {
     display: inline-block;
     font-weight: 300;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     &:not(:last-child) {
       margin-bottom: rem(18);
     }
