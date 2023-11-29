@@ -26,7 +26,7 @@ body {
   }
 }
 [class*="__container"] {
-  max-width: rem(1910);
+  max-width: rem(1920);
   padding-left: rem(15);
   padding-right: rem(15);
   margin: 0 auto;
@@ -990,6 +990,7 @@ body {
     column-gap: rem(96);
     // min-height: rem(363);
     @media (max-width: em(1600)) {
+      grid-template-columns: 1fr rem(648);
       column-gap: rem(30);
     }
     @media (max-width: em(1200)) {
@@ -1026,6 +1027,9 @@ body {
 
   &__info {
     padding-right: rem(82);
+    @media (max-width: em(1600)) {
+      padding-right: rem(20);
+    }
     @media (max-width: em(1200)) {
       padding: rem(70) rem(20);
       position: relative;
@@ -1108,6 +1112,186 @@ body {
   &__button {
     @media (max-width: em(767.98)) {
       width: 100%;
+    }
+  }
+}
+//========================================================================================================================================================
+.blog {
+  background-color: #f8f9fb;
+  padding: rem(46) rem(0);
+  @media (max-width: em(991.98)) {
+    padding: rem(40) rem(0);
+  }
+  @media (max-width: em(767.98)) {
+    padding: rem(30) rem(0);
+  }
+  // .blog__container
+
+  &__container {
+  }
+
+  // .blog__title
+
+  &__title {
+    font-size: rem(24);
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
+    @media (max-width: em(767.98)) {
+      text-align: center;
+    }
+  }
+
+  // .blog__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: rem(30);
+    justify-content: center;
+    row-gap: rem(40);
+    @media (max-width: em(1550)) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: em(1200)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: em(991.98)) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: em(767.98)) {
+      row-gap: rem(25);
+    }
+  }
+
+  // .blog__item
+
+  &__item {
+  }
+}
+.item-blog {
+  padding: rem(24) rem(24) rem(10) rem(24);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: em(767.98)) {
+    padding: rem(24) rem(10) rem(10) rem(10);
+  }
+  // .item-blog__body
+
+  &__body {
+    flex-grow: 1;
+    &:not(:last-child) {
+      margin-bottom: rem(77);
+    }
+    @media (max-width: em(991.98)) {
+      flex-grow: 0;
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+
+  // .item-blog__label
+
+  &__label {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    &:not(:last-child) {
+      margin-bottom: rem(21);
+    }
+    @media (max-width: em(767.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(15);
+      }
+    }
+  }
+
+  // .item-blog__title
+
+  &__title {
+    font-size: rem(26);
+    line-height: 1.3;
+    &:not(:last-child) {
+      margin-bottom: rem(32);
+    }
+    @media (max-width: em(767.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(15);
+      }
+    }
+    @media (max-width: em(500)) {
+      font-size: rem(24);
+    }
+  }
+
+  // .item-blog__text
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: rem(16);
+    line-height: math.div(24, 16);
+    letter-spacing: rem(0.16);
+    p {
+      &:not(:last-child) {
+        margin-bottom: rem(5);
+      }
+    }
+    @media (max-width: em(991.98)) {
+      font-size: rem(18);
+    }
+    @media (max-width: em(767.98)) {
+      font-size: rem(16);
+    }
+  }
+
+  // .item-blog__date
+
+  &__date {
+    border-top: rem(2) solid #000000;
+    padding-top: rem(7);
+  }
+}
+//========================================================================================================================================================
+.advantages {
+  background-color: #e6f1fa;
+  // .advantages__container
+
+  &__container {
+  }
+
+  // .advantages__list
+
+  &__list {
+    padding: rem(35) rem(0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: rem(40);
+    row-gap: rem(30);
+    @media (max-width: em(991.98)) {
+      justify-content: center;
+      // text-align: center;
+    }
+    @media (max-width: em(767.98)) {
+      padding: rem(20) rem(0);
+    }
+  }
+
+  // .advantages__item
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: rem(22);
+    &::before {
+      content: "";
+      background: url("../img/icons/advantages-check.svg") 0 0 / 100% no-repeat;
+      flex: 0 0 rem(14);
+      width: rem(14);
+      height: rem(9);
     }
   }
 }

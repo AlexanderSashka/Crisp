@@ -205,6 +205,37 @@
   // .home-page__best
 
   &__best {
+    &:not(:last-child) {
+      margin-bottom: rem(118);
+    }
+    @media (max-width: em(991.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(70);
+      }
+    }
+    @media (max-width: em(767.98)) {
+      &:not(:last-child) {
+        margin-bottom: rem(50);
+      }
+    }
+    @media (max-width: em(500)) {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+
+  // .home-page__blog
+
+  &__blog {
+  }
+
+  // .home-page__advantages
+
+  &__advantages {
+    &:not(:last-child) {
+      margin-bottom: rem(12);
+    }
   }
 }
 
