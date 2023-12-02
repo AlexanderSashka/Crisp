@@ -54,13 +54,13 @@
                 <!-- <a href="#" class="auth-header__image-link">
                     <img src="./img/icons/sign-in.svg" alt="Icon" />
                   </a> -->
-                <a href="#" class="auth-header__link"><span>SIGN IN</span></a>
+                <button type="button" class="auth-header__link auth-header__link_popup">SIGN IN</button>
               </li>
               <li class="auth-header__item">
                 <!-- <a href="#" class="auth-header__image-link">
                     <img src="./img/icons/create.svg" alt="Icon" />
                   </a> -->
-                <a href="#" class="auth-header__link"><span>CREATE AN ACCOUNT</span></a>
+                <a href="create-account.html" class="auth-header__link"><span>CREATE AN ACCOUNT</span></a>
               </li>
             </ul>
             <div class="actions-header__fav-cart">
@@ -76,6 +76,34 @@
               </a>
             </div>
           </div>
+        </div>
+        <div class="sign-in-popup">
+          <form action="#" method="" class="sign-in-popup__form form-sign-in">
+            <button type="button" class="form-sign-in__close-button">
+              <img src="./img/icons/close.svg" alt="Icon">
+            </button>
+            <h2 class="form-sign-in__title">login your account</h2>
+            <div class="form-sign-in__body">
+              <div class="form-sign-in__row">
+                <input autocomplete="off" type="email" name="email" placeholder="Email" class="form-sign-in__input">
+              </div>
+              <div class="form-sign-in__row">
+                <input autocomplete="off" type="password" name="password" placeholder="Password"
+                  class="form-sign-in__input">
+              </div>
+            </div>
+            <div class="form-sign-in__checkbox-row">
+              <input id="sign-in-check" autocomplete="off" type="checkbox" name="check"
+                class="form-sign-in__input-check">
+              <label class="form-sign-in__label" for="sign-in-check">By using this form you agree with the storage and
+                handling of your data by this
+                website.</label>
+            </div>
+            <div class="form-sign-in__buttons">
+              <button type="submit" class="form-sign-in__button">sign in</button>
+              <a href="#" class="form-sign-in__button form-sign-in__button_color">create an account</a>
+            </div>
+          </form>
         </div>
       </div>
     </header>
@@ -624,7 +652,135 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__body">
+          <a href="#" class="footer__logo">
+            <img src="./img/logo/logo.svg" alt="Logo">
+          </a>
+          <div class="footer__column">
+            <h3 class="footer__title">features</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">men</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Women</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">boys</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">girls</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">new arrivals</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">shoes</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">cothes</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">accessories
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Menu</h3>
+            <nav class="footer__menu menu-footer">
+              <ul class="menu-footer__list">
+                <li class="menu-footer__item">
+                  <a href="#" class="menu-footer__link">About us</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a href="#" class="menu-footer__link">contact us</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a href="#" class="menu-footer__link">my account</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a href="#" class="menu-footer__link">orders history</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a href="#" class="menu-footer__link">MY WISHLIST</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a href="#" class="menu-footer__link">BLOG</a>
+                </li>
+                <li class="menu-footer__item">
+                  <a href="#" class="menu-footer__link">LOGIN</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">contact us</h3>
+            <div class="footer__contacts contacts-footer">
+              <ul class="contacts-footer__list">
+                <li class="contacts-footer__item">
+                  <div class="contacts-footer__label">Address:</div>
+                  <div class="contacts-footer__address">123 STREET NAME, CITY, ENGLAND</div>
+                </li>
+                <li class="contacts-footer__item">
+                  <div class="contacts-footer__label">Phone:</div>
+                  <a href="tel:(123)4567890" class="contacts-footer__phone">(123) 456-7890</a>
+                </li>
+                <li class="contacts-footer__item">
+                  <div class="contacts-footer__label">email:</div>
+                  <a href="mailto:MAIL@EXAMPLE.COM" class="contacts-footer__email">MAIL@EXAMPLE.COM</a>
+                </li>
+                <li class="contacts-footer__item">
+                  <div class="contacts-footer__label">working days/hours</div>
+                  <div class="contacts-footer__info">MON - SUN / 9:00AM - 8:00PM</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">follow us</h3>
+            <div class="footer__social social-footer">
+              <div class="social-footer__list">
+                <li class="social-footer__item">
+                  <a href="#" class="social-footer__link">
+                    <img src="./img/social-icons/fb.svg" alt="Icon">
+                    facebook
+                  </a>
+                </li>
+                <li class="social-footer__item">
+                  <a href="#" class="social-footer__link">
+                    <img src="./img/social-icons/tw.svg" alt="Icon">
+                    twitter
+                  </a>
+                </li>
+                <li class="social-footer__item">
+                  <a href="#" class="social-footer__link">
+                    <img src="./img/social-icons/inst.svg" alt="Icon">
+                    instagram
+                  </a>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">join us</h3>
+            <form action="#" method="post" class="footer__form form-footer">
+              <div class="form-footer__label">Subscribe to our newsletters</div>
+              <div class="form-footer__row">
+                <input autocomplete="off" type="email" name="email" required placeholder="Email Address"
+                  class="form-footer__input">
+              </div>
+              <div class="form-footer__row">
+                <button type="submit" class="form-footer__button">Subscribe!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__copy">© 2019. Crisp theme Developed by Belvg</div>
+      </div>
+    </footer>
   </div>
   <div class="modal">
     <div class="modal__content">
@@ -663,7 +819,6 @@
     // Инициализируем второй слайдер (если нужно)
     document.addEventListener("DOMContentLoaded", function () {
       var swiper = new Swiper(".catalog-swiper", {
-        // slidesPerView: 1,
         spaceBetween: 27,
         loop: true,
         grabCursor: true,

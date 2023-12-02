@@ -7,18 +7,18 @@ window.addEventListener('DOMContentLoaded', () => {
 // 		 e.preventDefault();
 // 	}
 // });
-//========================================================================================================================================================
+//=========================Burger===============================================================================================================================
 const burgerMenu = document.querySelector('.menu__icon');
 
 burgerMenu.addEventListener('click', () => {
 	document.documentElement.classList.toggle('menu-open');
 });
 
-//========================================================================================================================================================
+//====================Modal Search====================================================================================================================================
 
-const search = document.querySelector('.header__search'),
- modal = document.querySelector('.modal'),
- modalClose = document.querySelector('.modal__close');
+	const search = document.querySelector('.header__search'),
+		modal = document.querySelector('.modal'),
+		modalClose = document.querySelector('.modal__close');
 
 search.addEventListener('click', () => {
 	// modal.classList.add('modal-open');
@@ -37,7 +37,23 @@ document.body.addEventListener('click', (e) => {
 		// document.documentElement.style.overflow = "visible"; 
 	}
 });
-//========================================================================================================================================================
+//==============Sign-In-Popup==========================================================================================================================================
+const signIn = document.querySelector('.auth-header__link_popup');
+const signInPopup = document.querySelector('.sign-in-popup');
+const signInPopupClose = document.querySelector('.form-sign-in__close-button');
+
+		signIn.addEventListener('click', () => {
+		// e.preventDefault();
+		// document.body.style.overflow = 'hidden';
+		signInPopup.classList.add('sign-in-open');
+	});
+	signInPopupClose.addEventListener('click', () => {
+		signInPopup.classList.remove('sign-in-open');
+		// document.body.style.overflow = '';
+	});
+
+
+//=======================Dynamic adapt=================================================================================================================================
 (function () {
 	let original_positions = [];
 	let da_elements = document.querySelectorAll('[data-da]');
@@ -177,3 +193,5 @@ document.body.addEventListener('click', (e) => {
 	}
 })();
 });
+//========================================================================================================================================================
+

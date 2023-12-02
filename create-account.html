@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Create Account</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<img src="./img/logo/logo.svg" alt="Logo" />
+				</div>
+				<div class="header__content">
+					<div class="header__navigation">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="" class="menu__link _active">home</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Shop</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Sale</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">contact us</a>
+									</li>
+								</ul>
+							</nav>
+							<button type="button" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<button type="button" class="header__search">
+							<span>search</span>
+						</button>
+					</div>
+					<div class="header__actions actions-header">
+						<ul data-da="menu__body,last,768" class="actions-header__auth auth-header">
+							<li class="auth-header__item">
+								<!-- <a href="#" class="auth-header__image-link">
+                    <img src="./img/icons/sign-in.svg" alt="Icon" />
+                  </a> -->
+								<button type="button" class="auth-header__link auth-header__link_popup">SIGN IN</button>
+							</li>
+							<li class="auth-header__item">
+								<!-- <a href="#" class="auth-header__image-link">
+                    <img src="./img/icons/create.svg" alt="Icon" />
+                  </a> -->
+								<a href="#" class="auth-header__link"><span>CREATE AN ACCOUNT</span></a>
+							</li>
+						</ul>
+						<div class="actions-header__fav-cart">
+							<a href="#" class="actions-header__favorite">
+								<img src="./img/icons/favorites.svg" alt="Icon" />
+							</a>
+							<a href="#" class="actions-header__cart">
+								<img src="./img/icons/cart.svg" alt="Icon" />
+								<div class="actions-header__text">
+									<div class="actions-header__label">Shopping Cart</div>
+									<div class="actions-header__total">0,00 EUR</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="sign-in-popup">
+					<form action="#" method="" class="sign-in-popup__form form-sign-in">
+						<button type="button" class="form-sign-in__close-button">
+							<img src="./img/icons/close.svg" alt="Icon">
+						</button>
+						<h2 class="form-sign-in__title">login your account</h2>
+						<div class="form-sign-in__body">
+							<div class="form-sign-in__row">
+								<input autocomplete="off" type="email" name="email" placeholder="Email"
+									class="form-sign-in__input">
+							</div>
+							<div class="form-sign-in__row">
+								<input autocomplete="off" type="password" name="password" placeholder="Password"
+									class="form-sign-in__input">
+							</div>
+						</div>
+						<div class="form-sign-in__checkbox-row">
+							<input id="sign-in-check" autocomplete="off" type="checkbox" name="check"
+								class="form-sign-in__input-check">
+							<label class="form-sign-in__label" for="sign-in-check">By using this form you agree with the
+								storage and
+								handling of your data by this
+								website.</label>
+						</div>
+						<div class="form-sign-in__buttons">
+							<button type="submit" class="form-sign-in__button">sign in</button>
+							<a href="#" class="form-sign-in__button form-sign-in__button_color">create an account</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+		<main class="create-account">
+			<section class="create-account__customer customer">
+				<div class="customer__container">
+					<h1 class="customer__title">Create New Customer Account</h1>
+					<div class="customer__body">
+						<form action="#" method="post" class="customer__form form-account">
+							<div class="form-account__personal-info">
+								<h3 class="form-account__title">Personal Information</h3>
+								<div class="form-account__inputs">
+									<div class="form-account__row">
+										<label for="first-name" class="form-account__label">First name <span>*</span></label>
+										<input id="first-name" autocomplete="off" type="text" name="first name"
+											placeholder="First Name" class="form-account__input">
+									</div>
+									<div class="form-account__row">
+										<label for="last-name" class="form-account__label">Last name <span>*</span></label>
+										<input id="last-name" autocomplete="off" type="text" name="last name"
+											placeholder="Last Name" class="form-account__input">
+									</div>
+								</div>
+								<div class="form-account__checkbox checkbox-account">
+									<input id="newsletter" autocomplete="off" type="checkbox" name="checkbox"
+										class="checkbox-account__input">
+									<label for="newsletter" class="checkbox-account__label">Sign Up for Newsletter</label>
+								</div>
+							</div>
+							<div class="form-account__newsletter">
+								<h3 class="form-account__title">Sign Up for Newsletter</h3>
+								<div class="form-account__inputs">
+									<div class="form-account__row">
+										<label for="email" class="form-account__label">Email <span>*</span></label>
+										<input id="email" autocomplete="off" required type="email" name="email"
+											placeholder="Email" class="form-account__input">
+									</div>
+									<div class="form-account__row">
+										<label for="password" class="form-account__label">Password <span>*</span></label>
+										<input id="password" autocomplete="off" type="password" name="password"
+											placeholder="Password" class="form-account__input">
+									</div>
+									<div class="form-account__row">
+										<label for="confirm" class="form-account__label">Confirm password <span>*</span></label>
+										<input id="confirm" autocomplete="off" type="text" name="confirm password"
+											placeholder="Confirm password " class="form-account__input">
+									</div>
+								</div>
+							</div>
+							<div class="form-account__buttons">
+								<button type="submit" class="form-account__button form-account__button_color">create an
+									account</button>
+								<a href="index.html" class="form-account__button">Back</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<div class="create-account__advantages advantages">
+				<div class="advantages__container">
+					<ul class="advantages__list">
+						<li class="advantages__item">Duties and Taxes Guaranteed</li>
+						<li class="advantages__item">Free Express Shipping</li>
+						<li class="advantages__item">Customer Love</li>
+						<li class="advantages__item">Easy Returns</li>
+						<li class="advantages__item">Secure Payment</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo">
+						<img src="./img/logo/logo.svg" alt="Logo">
+					</a>
+					<div class="footer__column">
+						<h3 class="footer__title">features</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">men</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Women</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">boys</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">girls</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">new arrivals</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">shoes</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">cothes</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">accessories
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Menu</h3>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">About us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">contact us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">my account</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">orders history</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">MY WISHLIST</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">BLOG</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">LOGIN</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">contact us</h3>
+						<div class="footer__contacts contacts-footer">
+							<ul class="contacts-footer__list">
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">Address:</div>
+									<div class="contacts-footer__address">123 STREET NAME, CITY, ENGLAND</div>
+								</li>
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">Phone:</div>
+									<a href="tel:(123)4567890" class="contacts-footer__phone">(123) 456-7890</a>
+								</li>
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">email:</div>
+									<a href="mailto:MAIL@EXAMPLE.COM" class="contacts-footer__email">MAIL@EXAMPLE.COM</a>
+								</li>
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">working days/hours</div>
+									<div class="contacts-footer__info">MON - SUN / 9:00AM - 8:00PM</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">follow us</h3>
+						<div class="footer__social social-footer">
+							<div class="social-footer__list">
+								<li class="social-footer__item">
+									<a href="#" class="social-footer__link">
+										<img src="./img/social-icons/fb.svg" alt="Icon">
+										facebook
+									</a>
+								</li>
+								<li class="social-footer__item">
+									<a href="#" class="social-footer__link">
+										<img src="./img/social-icons/tw.svg" alt="Icon">
+										twitter
+									</a>
+								</li>
+								<li class="social-footer__item">
+									<a href="#" class="social-footer__link">
+										<img src="./img/social-icons/inst.svg" alt="Icon">
+										instagram
+									</a>
+								</li>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">join us</h3>
+						<form action="#" method="post" class="footer__form form-footer">
+							<div class="form-footer__label">Subscribe to our newsletters</div>
+							<div class="form-footer__row">
+								<input autocomplete="off" type="email" name="email" required placeholder="Email Address"
+									class="form-footer__input">
+							</div>
+							<div class="form-footer__row">
+								<button type="submit" class="form-footer__button">Subscribe!</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="footer__copy">© 2019. Crisp theme Developed by Belvg</div>
+			</div>
+		</footer>
+	</div>
+	<div class="modal">
+		<div class="modal__content">
+			<form action="#" class="modal__form">
+				<div class="modal__row">
+					<input type="search" autocomplete="off" name="search" placeholder="Angels malu zip jeans slim black"
+						class="modal__input" />
+				</div>
+				<button type="button" class="modal__close"></button>
+			</form>
+		</div>
+	</div>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
