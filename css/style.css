@@ -1323,6 +1323,10 @@ button {
     row-gap: 0.625rem;
   }
 }
+.form-account__row_pass {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .form-account__label {
   -ms-flex-item-align: start;
       align-self: start;
@@ -1330,12 +1334,20 @@ button {
 .form-account__label span {
   color: #ff0000;
 }
+.form-account__wrapper-input {
+  position: relative;
+  width: 100%;
+  height: 2.75rem;
+}
 .form-account__input {
+  width: 100%;
   height: 2.75rem;
   padding-left: 1rem;
   border: 0.0625rem solid #c4c4c4;
   color: #3f3f3f;
   font-size: 1rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 @media (max-width: 47.99875em) {
   .form-account__input {
@@ -1491,6 +1503,64 @@ button {
 .checkbox-account__input:focus-visible + .checkbox-account__label {
   outline: 0.125rem solid #000;
   border-radius: 0.125rem;
+}
+
+.warning-pass {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  background-color: #ffe3e3;
+  padding: 0.46875rem 0.8125rem 0.46875rem 1rem;
+  color: #3f3f3f;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate(0, -1.25rem);
+      -ms-transform: translate(0, -1.25rem);
+          transform: translate(0, -1.25rem);
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+}
+.warning-pass::after {
+  content: "";
+  background: url("../img/icons/close-pass.svg") 0 0/100% no-repeat;
+  width: 0.625rem;
+  height: 0.625rem;
+  position: absolute;
+  top: 40%;
+  right: 0.8125rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.strong-pass {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  background-color: #e3ffe9;
+  padding: 0.46875rem 0.8125rem 0.46875rem 1rem;
+  color: #3f3f3f;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translate(0, -1.875rem);
+      -ms-transform: translate(0, -1.875rem);
+          transform: translate(0, -1.875rem);
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+}
+.strong-pass::after {
+  content: "";
+  background: url("../img/icons/strong-pass.svg") 0 0/100% no-repeat;
+  width: 0.625rem;
+  height: 0.625rem;
+  position: absolute;
+  top: 40%;
+  right: 0.8125rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 body {

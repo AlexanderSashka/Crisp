@@ -132,6 +132,9 @@
       flex-direction: column;
       row-gap: rem(10);
     }
+    &_pass {
+      transition: all 0.3s;
+    }
   }
 
   // .form-account__label
@@ -143,14 +146,22 @@
     }
   }
 
+  &__wrapper-input {
+    position: relative;
+    width: 100%;
+    height: rem(44);
+  }
+
   // .form-account__input
 
   &__input {
+    width: 100%;
     height: rem(44);
     padding-left: rem(16);
     border: rem(1) solid #c4c4c4;
     color: #3f3f3f;
     font-size: rem(16);
+    transition: all 0.5s;
     @media (max-width: em(767.98)) {
       width: 100%;
     }
@@ -158,7 +169,6 @@
       color: #828282;
     }
   }
-
   // .form-account__checkbox
 
   &__checkbox {
@@ -181,6 +191,18 @@
       }
     }
   }
+  // #password {
+  //   position: relative;
+  //   &.no-pass {
+  //     max-width: 100%;
+  //     height: rem(35);
+  //     background-color: #f0f2f2;
+  //     transform: translate(0, 100%);
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //   }
+  // }
 
   // .form-account__buttons
 
@@ -283,4 +305,58 @@
 .checkbox-account__input:focus-visible + .checkbox-account__label {
   outline: rem(2) solid #000;
   border-radius: rem(2);
+}
+.warning-pass {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-size: rem(14);
+  line-height: math.div(20, 14);
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  background-color: #ffe3e3;
+  padding: rem(7.5) rem(13) rem(7.5) rem(16);
+  color: #3f3f3f;
+  transition: all 0.5s;
+  transform: translate(0, rem(-20));
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    background: url("../img/icons/close-pass.svg") 0 0 / 100% no-repeat;
+    width: rem(10);
+    height: rem(10);
+    position: absolute;
+    top: 40%;
+    right: rem(13);
+    transition: all 0.5s;
+  }
+}
+.strong-pass {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  font-size: rem(14);
+  line-height: math.div(20, 14);
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  background-color: #e3ffe9;
+  padding: rem(7.5) rem(13) rem(7.5) rem(16);
+  color: #3f3f3f;
+  transition: all 0.5s;
+  transform: translate(0, rem(-30));
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    background: url("../img/icons/strong-pass.svg") 0 0 / 100% no-repeat;
+    width: rem(10);
+    height: rem(10);
+    position: absolute;
+    top: 40%;
+    right: rem(13);
+    transition: all 0.5s;
+  }
 }

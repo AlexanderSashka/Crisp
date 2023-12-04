@@ -138,13 +138,17 @@
 								<div class="form-account__inputs">
 									<div class="form-account__row">
 										<label for="email" class="form-account__label">Email <span>*</span></label>
-										<input id="email" autocomplete="off" required type="email" name="email"
-											placeholder="Email" class="form-account__input">
+										<input id="email" required type="email" name="email" placeholder="Email"
+											class="form-account__input">
 									</div>
-									<div class="form-account__row">
+									<div class="form-account__row form-account__row_pass">
 										<label for="password" class="form-account__label">Password <span>*</span></label>
-										<input id="password" autocomplete="off" type="password" name="password"
-											placeholder="Password" class="form-account__input">
+										<div class="form-account__wrapper-input">
+											<input id="password" autocomplete="off" type="password" name="password"
+												placeholder="Password" class="form-account__input">
+											<div class="warning-pass"></div>
+											<div class="strong-pass"></div>
+										</div>
 									</div>
 									<div class="form-account__row">
 										<label for="confirm" class="form-account__label">Confirm password <span>*</span></label>
@@ -316,6 +320,7 @@
 		</div>
 	</div>
 	<script src="./js/index.js"></script>
+	<script src="./js/create-account.js"></script>
 </body>
 
 </html>
