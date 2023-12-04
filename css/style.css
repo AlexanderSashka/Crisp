@@ -1522,9 +1522,12 @@ button {
   visibility: hidden;
   position: relative;
 }
-.warning-pass::after {
+.warning-pass.strong-pass {
+  background-color: #e3ffe9;
+}
+.warning-pass.strong-pass::after {
   content: "";
-  background: url("../img/icons/close-pass.svg") 0 0/100% no-repeat;
+  background: url("../img/icons/strong-pass.svg") 0 0/100% no-repeat;
   width: 0.625rem;
   height: 0.625rem;
   position: absolute;
@@ -1533,27 +1536,9 @@ button {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
-.strong-pass {
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  font-size: 0.875rem;
-  line-height: 1.4285714286;
-  background-color: #e3ffe9;
-  padding: 0.46875rem 0.8125rem 0.46875rem 1rem;
-  color: #3f3f3f;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: translate(0, -1.875rem);
-      -ms-transform: translate(0, -1.875rem);
-          transform: translate(0, -1.875rem);
-  opacity: 0;
-  visibility: hidden;
-  position: relative;
-}
-.strong-pass::after {
+.warning-pass::after {
   content: "";
-  background: url("../img/icons/strong-pass.svg") 0 0/100% no-repeat;
+  background: url("../img/icons/close-pass.svg") 0 0/100% no-repeat;
   width: 0.625rem;
   height: 0.625rem;
   position: absolute;

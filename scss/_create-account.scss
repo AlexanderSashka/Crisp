@@ -322,6 +322,19 @@
   opacity: 0;
   visibility: hidden;
   position: relative;
+  &.strong-pass {
+    background-color: #e3ffe9;
+    &::after {
+      content: "";
+      background: url("../img/icons/strong-pass.svg") 0 0 / 100% no-repeat;
+      width: rem(10);
+      height: rem(10);
+      position: absolute;
+      top: 40%;
+      right: rem(13);
+      transition: all 0.5s;
+    }
+  }
   &::after {
     content: "";
     background: url("../img/icons/close-pass.svg") 0 0 / 100% no-repeat;
@@ -333,30 +346,30 @@
     transition: all 0.5s;
   }
 }
-.strong-pass {
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  font-size: rem(14);
-  line-height: math.div(20, 14);
-  // position: absolute;
-  // bottom: 0;
-  // right: 0;
-  background-color: #e3ffe9;
-  padding: rem(7.5) rem(13) rem(7.5) rem(16);
-  color: #3f3f3f;
-  transition: all 0.5s;
-  transform: translate(0, rem(-30));
-  opacity: 0;
-  visibility: hidden;
-  position: relative;
-  &::after {
-    content: "";
-    background: url("../img/icons/strong-pass.svg") 0 0 / 100% no-repeat;
-    width: rem(10);
-    height: rem(10);
-    position: absolute;
-    top: 40%;
-    right: rem(13);
-    transition: all 0.5s;
-  }
-}
+// .strong-pass {
+//   font-family: "Roboto", sans-serif;
+//   width: 100%;
+//   font-size: rem(14);
+//   line-height: math.div(20, 14);
+//   // position: absolute;
+//   // bottom: 0;
+//   // right: 0;
+//   background-color: #e3ffe9;
+//   padding: rem(7.5) rem(13) rem(7.5) rem(16);
+//   color: #3f3f3f;
+//   transition: all 0.5s;
+//   transform: translate(0, rem(-30));
+//   opacity: 0;
+//   visibility: hidden;
+//   position: relative;
+//   &::after {
+//     content: "";
+//     background: url("../img/icons/strong-pass.svg") 0 0 / 100% no-repeat;
+//     width: rem(10);
+//     height: rem(10);
+//     position: absolute;
+//     top: 40%;
+//     right: rem(13);
+//     transition: all 0.5s;
+//   }
+// }
