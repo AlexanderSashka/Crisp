@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Catalog</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="./img/logo/logo.svg" alt="Logo" />
+				</a>
+				<div class="header__content">
+					<div class="header__navigation">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="" class="menu__link _active">home</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Shop</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">blog</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Sale</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">contact us</a>
+									</li>
+								</ul>
+							</nav>
+							<button type="button" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<button type="button" class="header__search">
+							<span>search</span>
+						</button>
+					</div>
+					<div class="header__actions actions-header">
+						<ul data-da="menu__body,last,768" class="actions-header__auth auth-header">
+							<li class="auth-header__item">
+								<!-- <a href="#" class="auth-header__image-link">
+                    <img src="./img/icons/sign-in.svg" alt="Icon" />
+                  </a> -->
+								<button type="button" class="auth-header__link auth-header__link_popup">SIGN IN</button>
+							</li>
+							<li class="auth-header__item">
+								<!-- <a href="#" class="auth-header__image-link">
+                    <img src="./img/icons/create.svg" alt="Icon" />
+                  </a> -->
+								<a href="#" class="auth-header__link"><span>CREATE AN ACCOUNT</span></a>
+							</li>
+						</ul>
+						<div class="actions-header__fav-cart">
+							<a href="#" class="actions-header__favorite">
+								<img src="./img/icons/favorites.svg" alt="Icon" />
+							</a>
+							<a href="#" class="actions-header__cart">
+								<img src="./img/icons/cart.svg" alt="Icon" />
+								<div class="actions-header__text">
+									<div class="actions-header__label">Shopping Cart</div>
+									<div class="actions-header__total">0,00 EUR</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="sign-in-popup">
+					<form action="#" method="" class="sign-in-popup__form form-sign-in">
+						<button type="button" class="form-sign-in__close-button">
+							<img src="./img/icons/close.svg" alt="Icon">
+						</button>
+						<h2 class="form-sign-in__title">login your account</h2>
+						<div class="form-sign-in__body">
+							<div class="form-sign-in__row">
+								<input autocomplete="off" type="email" name="email" placeholder="Email"
+									class="form-sign-in__input">
+							</div>
+							<div class="form-sign-in__row">
+								<input autocomplete="off" type="password" name="password" placeholder="Password"
+									class="form-sign-in__input">
+							</div>
+						</div>
+						<div class="form-sign-in__checkbox-row">
+							<input id="sign-in-check" autocomplete="off" type="checkbox" name="check"
+								class="form-sign-in__input-check">
+							<label class="form-sign-in__label" for="sign-in-check">By using this form you agree with the
+								storage and
+								handling of your data by this
+								website.</label>
+						</div>
+						<div class="form-sign-in__buttons">
+							<button type="submit" class="form-sign-in__button">sign in</button>
+							<a href="#" class="form-sign-in__button form-sign-in__button_color">create an
+								account</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</header>
+		<main class="catalog">
+			<section class="catalog__shoping shoping">
+				<div class="shoping__container">
+					<div class="shoping__content">
+						<div class="shoping__body">
+							<h3 class="shoping__title">shoping without limits.</h3>
+							<div class="shoping__text">
+								<p>
+									You can choose the best option for you, and it does not matter whether you are in Prague or
+									San
+									Francisco. We will deliver your
+									purchase anywhere!
+								</p>
+							</div>
+							<a href="#" class="shoping__button button">shop now</a>
+						</div>
+						<div class="shoping__bg">
+							<img src="./img/shoping/bg-catalog.jpg" alt="Image" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="catalog__shop shop-catalog">
+				<div class="shop-catalog__container">
+					<div class="shop-catalog__body">
+						<aside data-spollers="992,max" class="shop-catalog__filter filter">
+							<h3 data-spoller class="filter__spoller-title">filters</h3>
+							<div class="filter__content">
+								<form action="#" class="filter__form form-filter">
+									<div class="form-filter__brand brand-filter">
+										<h3 class="brand-filter__title filter-title">Brand</h3>
+										<div class="brand-filter__content">
+											<div class="brand-filter__row">
+												<input id="brand_1" autocomplete="off" type="checkbox" name="brand_1"
+													class="brand-filter__input input">
+												<label for="brand_1" class="brand-filter__label">State</label>
+											</div>
+											<div class="brand-filter__row">
+												<input id="brand_2" autocomplete="off" type="checkbox" name="brand_2"
+													class="brand-filter__input input">
+												<label for="brand_2" class="brand-filter__label">Cooper</label>
+											</div>
+											<div class="brand-filter__row">
+												<input id="brand_3" checked autocomplete="off" type="checkbox" name="brand_3"
+													class="brand-filter__input input">
+												<label for="brand_3" class="brand-filter__label">bardot</label>
+											</div>
+											<div class="brand-filter__row">
+												<input id="brand_4" autocomplete="off" type="checkbox" name="brand_4"
+													class="brand-filter__input input">
+												<label for="brand_4" class="brand-filter__label">alfani</label>
+											</div>
+											<div class="brand-filter__row">
+												<input id="brand_5" autocomplete="off" type="checkbox" name="brand_5"
+													class="brand-filter__input input">
+												<label for="brand_5" class="brand-filter__label">cece</label>
+											</div>
+											<div class="brand-filter__row">
+												<input id="brand_6" autocomplete="off" type="checkbox" name="brand_6"
+													class="brand-filter__input input">
+												<label for="brand_6" class="brand-filter__label">donna ricco</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-filter__size size-filter">
+										<h3 class="size-filter__title filter-title">Size (Inches)</h3>
+										<div class="size-filter__items">
+											<div class="size-filter__item">
+												<input id="size_1" autocomplete="off" type="checkbox" name="size_1"
+													class="size-filter__input input">
+												<label for="size_1" class="size-filter__label">
+													<span>w26</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_2" autocomplete="off" type="checkbox" name="size_2"
+													class="size-filter__input input">
+												<label for="size_2" class="size-filter__label">
+													<span>w27</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_3" autocomplete="off" type="checkbox" name="size_3"
+													class="size-filter__input input">
+												<label for="size_3" class="size-filter__label">
+													<span>w28</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_4" autocomplete="off" type="checkbox" name="size_4"
+													class="size-filter__input input">
+												<label for="size_4" class="size-filter__label">
+													<span>w29</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_5" autocomplete="off" type="checkbox" name="size_5"
+													class="size-filter__input input">
+												<label for="size_5" class="size-filter__label">
+													<span>w30</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_6" autocomplete="off" type="checkbox" name="size_6"
+													class="size-filter__input input">
+												<label for="size_6" class="size-filter__label">
+													<span>w31</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_7" autocomplete="off" type="checkbox" name="size_7"
+													class="size-filter__input input">
+												<label for="size_7" class="size-filter__label">
+													<span>w32</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_8" autocomplete="off" type="checkbox" name="size_8"
+													class="size-filter__input input">
+												<label for="size_8" class="size-filter__label">
+													<span>w33</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_9" autocomplete="off" type="checkbox" name="size_9"
+													class="size-filter__input input">
+												<label for="size_9" class="size-filter__label">
+													<span>w34</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_10" autocomplete="off" type="checkbox" name="size_10"
+													class="size-filter__input input">
+												<label for="size_10" class="size-filter__label">
+													<span>w35</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_11" autocomplete="off" type="checkbox" name="size_11"
+													class="size-filter__input input">
+												<label for="size_11" class="size-filter__label">
+													<span>w36</span>
+												</label>
+											</div>
+											<div class="size-filter__item">
+												<input id="size_12" autocomplete="off" type="checkbox" name="size_12"
+													class="size-filter__input input">
+												<label for="size_12" class="size-filter__label">
+													<span>w37</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-filter__length length-filter">
+										<h3 class="length-filter__title filter-title">Dress length</h3>
+										<div class="length-filter__row">
+											<input id="length_1" autocomplete="off" type="checkbox" name="length_1"
+												class="length-filter__input input">
+											<label for="length_1" class="length-filter__label">short</label>
+										</div>
+										<div class="length-filter__row">
+											<input id="length_2" autocomplete="off" type="checkbox" name="length_2"
+												class="length-filter__input input">
+											<label for="length_2" class="length-filter__label">knee length</label>
+										</div>
+										<div class="length-filter__row">
+											<input id="length_3" checked autocomplete="off" type="checkbox" name="length_3"
+												class="length-filter__input input">
+											<label for="length_3" class="length-filter__label">hight low</label>
+										</div>
+										<div class="length-filter__row">
+											<input id="length_4" autocomplete="off" type="checkbox" name="length_4"
+												class="length-filter__input input">
+											<label for="length_4" class="length-filter__label">long</label>
+										</div>
+										<div class="length-filter__row">
+											<input id="length_5" autocomplete="off" type="checkbox" name="length_5"
+												class="length-filter__input input">
+											<label for="length_5" class="length-filter__label">midi</label>
+										</div>
+									</div>
+									<div class="form-filter__color color-filter">
+										<h3 class="color-filter__title filter-title">Color</h3>
+										<div class="color-filter__items">
+											<div class="color-filter__item">
+												<input id="color_1" autocomplete="off" type="checkbox" name="color_1"
+													class="color-filter__input input">
+												<label for="color_1" class="color-filter__label color-filter__label_c1"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_2" autocomplete="off" type="checkbox" name="color_2"
+													class="color-filter__input input">
+												<label for="color_2" class="color-filter__label color-filter__label_c2"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_3" autocomplete="off" type="checkbox" name="color_3"
+													class="color-filter__input input">
+												<label for="color_3" class="color-filter__label color-filter__label_c3"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_4" autocomplete="off" type="checkbox" name="color_4"
+													class="color-filter__input input">
+												<label for="color_4" class="color-filter__label color-filter__label_c4"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_5" autocomplete="off" type="checkbox" name="color_5"
+													class="color-filter__input input">
+												<label for="color_5" class="color-filter__label color-filter__label_c5"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_6" autocomplete="off" type="checkbox" name="color_6"
+													class="color-filter__input input">
+												<label for="color_6" class="color-filter__label color-filter__label_c6"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_7" autocomplete="off" type="checkbox" name="color_7"
+													class="color-filter__input input">
+												<label for="color_7" class="color-filter__label color-filter__label_c7"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_8" autocomplete="off" type="checkbox" name="color_8"
+													class="color-filter__input input">
+												<label for="color_8" class="color-filter__label color-filter__label_c8"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_9" autocomplete="off" type="checkbox" name="color_9"
+													class="color-filter__input input">
+												<label for="color_9" class="color-filter__label color-filter__label_c9"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_10" autocomplete="off" type="checkbox" name="color_10"
+													class="color-filter__input input">
+												<label for="color_10" class="color-filter__label color-filter__label_c10"></label>
+											</div>
+											<div class="color-filter__item">
+												<input id="color_11" autocomplete="off" type="checkbox" name="color_11"
+													class="color-filter__input input">
+												<label for="color_11" class="color-filter__label color-filter__label_c11"></label>
+											</div>
+										</div>
+									</div>
+									<div class="form-filter__price price-filter">
+										<h3 class="price-filter__title filter-title">Price Range</h3>
+										<div class="price-filter__row">
+											<div class="price-filter__body">
+												<div class="price-filter__value"><span>0.00 EUR</span></div>
+												<div class="price-filter__value"><span>250.00 EUR</span></div>
+											</div>
+											<div class="price-filter__wrapper">
+												<input type="range" min="0" max="250" name="price" class="price-filter__input">
+											</div>
+										</div>
+										<button type="submit" class="price-filter__button">Apply</button>
+									</div>
+								</form>
+								<div class="filter__info">
+									<h3 class="filter__title filter-title">About Dresses</h3>
+									<div class="filter__text">
+										<p>Every day we’re gonna be dropping the latest trends to help you nail every Summer
+											sitch.
+											Whether it’s a graduation, your mate's wedding, or just a cute day at the races with
+											the
+											gals, our occasion dresses have got you covered. Not looking for something fancy? No
+											stress.
+											We’ve got day dresses for days (aka bodycon dresses, t-shirt dresses, oversized shirt
+											dresses).</p>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<div class="shop-catalog__items">
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/01.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_1" autocomplete="off" type="checkbox" name="item-color_1"
+											class="shop-catalog__input">
+										<label for="item-color_1" class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_2" autocomplete="off" type="checkbox" name="item-color_2"
+											class="shop-catalog__input">
+										<label for="item-color_2" class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_3" autocomplete="off" type="checkbox" name="item-color_3"
+											class="shop-catalog__input">
+										<label for="item-color_3" class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/02.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_4" autocomplete="off" type="checkbox" name="item-color_4"
+											class="shop-catalog__input">
+										<label for="item-color_4" class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_5" autocomplete="off" type="checkbox" name="item-color_5"
+											class="shop-catalog__input">
+										<label for="item-color_5" class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_6" autocomplete="off" type="checkbox" name="item-color_6"
+											class="shop-catalog__input">
+										<label for="item-color_6" class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/03.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_7" autocomplete="off" type="checkbox" name="item-color_7"
+											class="shop-catalog__input">
+										<label for="item-color_7" class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_8" autocomplete="off" type="checkbox" name="item-color_8"
+											class="shop-catalog__input">
+										<label for="item-color_8" class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_9" autocomplete="off" type="checkbox" name="item-color_9"
+											class="shop-catalog__input">
+										<label for="item-color_9" class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_10" autocomplete="off" type="checkbox" name="item-color_10"
+											class="shop-catalog__input">
+										<label for="item-color_10"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/04.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_11" autocomplete="off" type="checkbox" name="item-color_11"
+											class="shop-catalog__input">
+										<label for="item-color_11"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_12" autocomplete="off" type="checkbox" name="item-color_12"
+											class="shop-catalog__input">
+										<label for="item-color_12"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_13" autocomplete="off" type="checkbox" name="item-color_13"
+											class="shop-catalog__input">
+										<label for="item-color_13"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_14" autocomplete="off" type="checkbox" name="item-color_14"
+											class="shop-catalog__input">
+										<label for="item-color_14"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/05.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_15" autocomplete="off" type="checkbox" name="item-color_15"
+											class="shop-catalog__input">
+										<label for="item-color_15"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_16" autocomplete="off" type="checkbox" name="item-color_16"
+											class="shop-catalog__input">
+										<label for="item-color_16"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_17" autocomplete="off" type="checkbox" name="item-color_17"
+											class="shop-catalog__input">
+										<label for="item-color_17"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_18" autocomplete="off" type="checkbox" name="item-color_18"
+											class="shop-catalog__input">
+										<label for="item-color_18"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/06.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_19" autocomplete="off" type="checkbox" name="item-color_19"
+											class="shop-catalog__input">
+										<label for="item-color_19"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_20" autocomplete="off" type="checkbox" name="item-color_20"
+											class="shop-catalog__input">
+										<label for="item-color_20"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_21" autocomplete="off" type="checkbox" name="item-color_21"
+											class="shop-catalog__input">
+										<label for="item-color_21"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_22" autocomplete="off" type="checkbox" name="item-color_22"
+											class="shop-catalog__input">
+										<label for="item-color_22"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/07.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_23" autocomplete="off" type="checkbox" name="item-color_23"
+											class="shop-catalog__input">
+										<label for="item-color_23"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_24" autocomplete="off" type="checkbox" name="item-color_24"
+											class="shop-catalog__input">
+										<label for="item-color_24"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_25" autocomplete="off" type="checkbox" name="item-color_25"
+											class="shop-catalog__input">
+										<label for="item-color_25"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_26" autocomplete="off" type="checkbox" name="item-color_26"
+											class="shop-catalog__input">
+										<label for="item-color_26"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/08.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_27" autocomplete="off" type="checkbox" name="item-color_27"
+											class="shop-catalog__input">
+										<label for="item-color_27"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_28" autocomplete="off" type="checkbox" name="item-color_28"
+											class="shop-catalog__input">
+										<label for="item-color_28"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_29" autocomplete="off" type="checkbox" name="item-color_29"
+											class="shop-catalog__input">
+										<label for="item-color_29"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_30" autocomplete="off" type="checkbox" name="item-color_30"
+											class="shop-catalog__input">
+										<label for="item-color_30"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="shop-catalog__banner banner">
+							<div class="banner__content">
+								<div class="banner__body">
+									<h3 class="banner__title">shoping without limits.</h3>
+									<div class="banner__text">
+										<p>
+											You can choose the best option for you, and it does not matter whether you are in
+											Prague or
+											San
+											Francisco. We will deliver your
+											purchase anywhere!
+										</p>
+									</div>
+									<a href="#" class="banner__button button button_color">shop now</a>
+								</div>
+								<div class="banner__bg">
+									<img src="./img/shoping/bg-catalog-2.jpg" alt="Image" />
+								</div>
+							</div>
+						</div>
+						<div class="shop-catalog__items shop-catalog__items_position">
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/01.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_1" autocomplete="off" type="checkbox" name="item-color_1"
+											class="shop-catalog__input">
+										<label for="item-color_1" class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_2" autocomplete="off" type="checkbox" name="item-color_2"
+											class="shop-catalog__input">
+										<label for="item-color_2" class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_3" autocomplete="off" type="checkbox" name="item-color_3"
+											class="shop-catalog__input">
+										<label for="item-color_3" class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/02.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_4" autocomplete="off" type="checkbox" name="item-color_4"
+											class="shop-catalog__input">
+										<label for="item-color_4" class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_5" autocomplete="off" type="checkbox" name="item-color_5"
+											class="shop-catalog__input">
+										<label for="item-color_5" class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_6" autocomplete="off" type="checkbox" name="item-color_6"
+											class="shop-catalog__input">
+										<label for="item-color_6" class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/03.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_7" autocomplete="off" type="checkbox" name="item-color_7"
+											class="shop-catalog__input">
+										<label for="item-color_7" class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_8" autocomplete="off" type="checkbox" name="item-color_8"
+											class="shop-catalog__input">
+										<label for="item-color_8" class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_9" autocomplete="off" type="checkbox" name="item-color_9"
+											class="shop-catalog__input">
+										<label for="item-color_9" class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_10" autocomplete="off" type="checkbox" name="item-color_10"
+											class="shop-catalog__input">
+										<label for="item-color_10"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/04.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_11" autocomplete="off" type="checkbox" name="item-color_11"
+											class="shop-catalog__input">
+										<label for="item-color_11"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_12" autocomplete="off" type="checkbox" name="item-color_12"
+											class="shop-catalog__input">
+										<label for="item-color_12"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_13" autocomplete="off" type="checkbox" name="item-color_13"
+											class="shop-catalog__input">
+										<label for="item-color_13"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_14" autocomplete="off" type="checkbox" name="item-color_14"
+											class="shop-catalog__input">
+										<label for="item-color_14"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/05.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_15" autocomplete="off" type="checkbox" name="item-color_15"
+											class="shop-catalog__input">
+										<label for="item-color_15"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_16" autocomplete="off" type="checkbox" name="item-color_16"
+											class="shop-catalog__input">
+										<label for="item-color_16"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_17" autocomplete="off" type="checkbox" name="item-color_17"
+											class="shop-catalog__input">
+										<label for="item-color_17"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_18" autocomplete="off" type="checkbox" name="item-color_18"
+											class="shop-catalog__input">
+										<label for="item-color_18"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/06.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_19" autocomplete="off" type="checkbox" name="item-color_19"
+											class="shop-catalog__input">
+										<label for="item-color_19"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_20" autocomplete="off" type="checkbox" name="item-color_20"
+											class="shop-catalog__input">
+										<label for="item-color_20"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_21" autocomplete="off" type="checkbox" name="item-color_21"
+											class="shop-catalog__input">
+										<label for="item-color_21"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_22" autocomplete="off" type="checkbox" name="item-color_22"
+											class="shop-catalog__input">
+										<label for="item-color_22"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/07.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_23" autocomplete="off" type="checkbox" name="item-color_23"
+											class="shop-catalog__input">
+										<label for="item-color_23"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_24" autocomplete="off" type="checkbox" name="item-color_24"
+											class="shop-catalog__input">
+										<label for="item-color_24"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_25" autocomplete="off" type="checkbox" name="item-color_25"
+											class="shop-catalog__input">
+										<label for="item-color_25"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_26" autocomplete="off" type="checkbox" name="item-color_26"
+											class="shop-catalog__input">
+										<label for="item-color_26"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+							<article class="shop-catalog__item">
+								<div class="shop-catalog__image">
+									<img src="./img/catalog/shop/08.jpg" alt="Image">
+								</div>
+								<h4 class="shop-catalog__title">TOP women</h4>
+								<a href="#" class="shop-catalog__text">Angels malu zip jeans slim black used</a>
+								<div class="shop-catalog__price">139,00 EUR</div>
+								<div class="shop-catalog__colors">
+									<div class="shop-catalog__color">
+										<input id="item-color_27" autocomplete="off" type="checkbox" name="item-color_27"
+											class="shop-catalog__input">
+										<label for="item-color_27"
+											class="shop-catalog__label shop-catalog__label_color_1"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_28" autocomplete="off" type="checkbox" name="item-color_28"
+											class="shop-catalog__input">
+										<label for="item-color_28"
+											class="shop-catalog__label shop-catalog__label_color_2"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_29" autocomplete="off" type="checkbox" name="item-color_29"
+											class="shop-catalog__input">
+										<label for="item-color_29"
+											class="shop-catalog__label shop-catalog__label_color_3"></label>
+									</div>
+									<div class="shop-catalog__color">
+										<input id="item-color_30" autocomplete="off" type="checkbox" name="item-color_30"
+											class="shop-catalog__input">
+										<label for="item-color_30"
+											class="shop-catalog__label shop-catalog__label_color_4"></label>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-catalog__advantages advantages">
+				<div class="advantages__container">
+					<ul class="advantages__list">
+						<li class="advantages__item">Duties and Taxes Guaranteed</li>
+						<li class="advantages__item">Free Express Shipping</li>
+						<li class="advantages__item">Customer Love</li>
+						<li class="advantages__item">Easy Returns</li>
+						<li class="advantages__item">Secure Payment</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="#" class="footer__logo">
+						<img src="./img/logo/logo.svg" alt="Logo">
+					</a>
+					<div class="footer__column">
+						<h3 class="footer__title">features</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">men</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Women</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">boys</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">girls</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">new arrivals</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">shoes</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">cothes</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">accessories
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Menu</h3>
+						<nav class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">About us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">contact us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">my account</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">orders history</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">MY WISHLIST</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">BLOG</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">LOGIN</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">contact us</h3>
+						<div class="footer__contacts contacts-footer">
+							<ul class="contacts-footer__list">
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">Address:</div>
+									<div class="contacts-footer__address">123 STREET NAME, CITY, ENGLAND</div>
+								</li>
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">Phone:</div>
+									<a href="tel:(123)4567890" class="contacts-footer__phone">(123) 456-7890</a>
+								</li>
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">email:</div>
+									<a href="mailto:MAIL@EXAMPLE.COM" class="contacts-footer__email">MAIL@EXAMPLE.COM</a>
+								</li>
+								<li class="contacts-footer__item">
+									<div class="contacts-footer__label">working days/hours</div>
+									<div class="contacts-footer__info">MON - SUN / 9:00AM - 8:00PM</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">follow us</h3>
+						<div class="footer__social social-footer">
+							<div class="social-footer__list">
+								<li class="social-footer__item">
+									<a href="#" class="social-footer__link">
+										<img src="./img/social-icons/fb.svg" alt="Icon">
+										facebook
+									</a>
+								</li>
+								<li class="social-footer__item">
+									<a href="#" class="social-footer__link">
+										<img src="./img/social-icons/tw.svg" alt="Icon">
+										twitter
+									</a>
+								</li>
+								<li class="social-footer__item">
+									<a href="#" class="social-footer__link">
+										<img src="./img/social-icons/inst.svg" alt="Icon">
+										instagram
+									</a>
+								</li>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">join us</h3>
+						<form action="#" method="post" class="footer__form form-footer">
+							<div class="form-footer__label">Subscribe to our newsletters</div>
+							<div class="form-footer__row">
+								<input autocomplete="off" type="email" name="email" required placeholder="Email Address"
+									class="form-footer__input">
+							</div>
+							<div class="form-footer__row">
+								<button type="submit" class="form-footer__button">Subscribe!</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="footer__copy">© 2019. Crisp theme Developed by Belvg</div>
+			</div>
+		</footer>
+	</div>
+	<div class="modal">
+		<div class="modal__content">
+			<form action="#" class="modal__form">
+				<div class="modal__row">
+					<input type="search" autocomplete="off" name="search" placeholder="Angels malu zip jeans slim black"
+						class="modal__input" />
+				</div>
+				<button type="button" class="modal__close"></button>
+			</form>
+		</div>
+	</div>
+	<script src="./js/index.js"></script>
+	<script src="./js/filter.js"></script>
+	<!-- <script src="./js/create-account.js"></script> -->
+</body>
+
+</html>
