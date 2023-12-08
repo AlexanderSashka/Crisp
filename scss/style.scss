@@ -1136,7 +1136,7 @@ body {
     padding: rem(40) rem(0);
   }
   @media (max-width: em(767.98)) {
-    padding: rem(30) rem(0);
+    padding: rem(20) rem(0);
   }
   // .blog__container
 
@@ -1152,6 +1152,9 @@ body {
     }
     @media (max-width: em(767.98)) {
       text-align: center;
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
     }
   }
 

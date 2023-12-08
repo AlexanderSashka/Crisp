@@ -364,6 +364,7 @@
     }
     @media (max-width: em(767.98)) {
       font-size: rem(18);
+      font-weight: 400;
     }
   }
 
@@ -553,6 +554,11 @@
   font-size: rem(24);
   &:not(:last-child) {
     margin-bottom: rem(30);
+  }
+  @media (max-width: em(767.98)) {
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
   }
 }
 .input {
