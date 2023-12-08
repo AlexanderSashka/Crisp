@@ -62,6 +62,12 @@ body {
     align-items: center;
     column-gap: rem(30);
     position: relative;
+    transition: all 0.5s;
+    .header__scroll & {
+      @media (min-width: em(991.98)) {
+        min-height: rem(80);
+      }
+    }
     @media (max-width: em(1300)) {
       grid-template-columns: rem(150) 1fr;
       column-gap: rem(15);
@@ -598,7 +604,7 @@ body {
   // .offers__image
 
   &__image {
-    padding-bottom: 46.969697%; /* 434/924 */
+    padding-bottom: 46.67%; /* 434/924 */
     @media (max-width: em(1200)) {
       opacity: 0.8;
     }
@@ -853,7 +859,7 @@ body {
       padding-bottom: rem(40);
     }
     @media (max-width: em(767.98)) {
-      padding-bottom: rem(20);
+      padding-bottom: rem(0);
     }
     button {
       font-size: rem(14);

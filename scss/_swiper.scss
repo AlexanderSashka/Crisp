@@ -215,6 +215,10 @@
   background-color: inherit !important;
   opacity: 1 !important;
   transition: all 0.3s;
+  @media (max-width: em(500)) {
+    width: rem(14) !important;
+    height: rem(14) !important;
+  }
 }
 .swiper-pagination-bullet-active {
   background-color: #000000 !important;

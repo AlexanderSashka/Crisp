@@ -114,12 +114,7 @@
 
   &__main {
     &:not(:last-child) {
-      margin-bottom: rem(19);
-    }
-    @media (max-width: em(767.98)) {
-      &:not(:last-child) {
-        margin-bottom: rem(35);
-      }
+      margin-bottom: rem(20);
     }
   }
 
@@ -210,11 +205,11 @@
 
   &__best {
     &:not(:last-child) {
-      margin-bottom: rem(118);
+      margin-bottom: rem(82);
     }
     @media (max-width: em(991.98)) {
       &:not(:last-child) {
-        margin-bottom: rem(50);
+        margin-bottom: rem(40);
       }
     }
     @media (max-width: em(767.98)) {

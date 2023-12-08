@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 // document.addEventListener('click', function (e) {
 // 	const targetElement = e.target;
 
@@ -393,4 +393,35 @@ const signInPopupClose = document.querySelector('.form-sign-in__close-button');
 		 return _slideUp(target, duration);
 	  }
 	}
+	//========================================================================================================================================================
+	const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+	if (menuLinks.length > 0) {
+		menuLinks.forEach(menuLink => {
+			menuLink.addEventListener('click', oneMenuLinkClick);
+		});
+		function oneMenuLinkClick(e) {
+			const menuLink = e.target;
+			if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+				const gotoBlock = document.querySelector(menuLink.dataset.goto);
+				const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
+
+				window.scrollTo({
+					top: gotoBlockValue,
+					behavior:"smooth"
+				});
+				e.preventDefault();
+			}
+		}
+	}
+	//========================================================================================================================================================
+	window.addEventListener('scroll', function () {
+		const header = document.querySelector('.header');
+		const scrolly = window.scrollY;
+		const value = 116;
+		if (scrolly >= value) {
+		  header.classList.add('header__scroll');
+		} else {
+		  header.classList.remove('header__scroll');
+		}
+	 });
 });
