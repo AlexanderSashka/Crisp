@@ -272,15 +272,18 @@
     font-weight: 500;
     text-transform: uppercase;
     position: relative;
+    display: flex;
+    justify-content: space-between;
     ._init & {
       &::after {
         content: "";
         position: absolute;
         top: 25%;
-        right: rem(5);
+        right: rem(0);
         background: url("../img/icons/filter-arrow.svg") 0 0 / 100% no-repeat;
+        flex: 0 0 rem(15);
         width: rem(15);
-        height: rem(25 );
+        height: rem(25);
         transition: all 0.3s;
         transform: rotate(-90deg);
       }

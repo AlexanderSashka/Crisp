@@ -1896,6 +1896,12 @@ button {
   font-weight: 500;
   text-transform: uppercase;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (min-width: 61.99875em) {
   .filter__spoller-title {
@@ -1906,8 +1912,11 @@ button {
   content: "";
   position: absolute;
   top: 25%;
-  right: 0.3125rem;
+  right: 0rem;
   background: url("../img/icons/filter-arrow.svg") 0 0/100% no-repeat;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 0.9375rem;
+          flex: 0 0 0.9375rem;
   width: 0.9375rem;
   height: 1.5625rem;
   -webkit-transition: all 0.3s;
