@@ -98,6 +98,8 @@
       }
     }
     @media (max-width: em(500)) {
+      display: flex;
+      column-gap: rem(20);
     }
     ._init & {
       // &::before,
@@ -111,8 +113,6 @@
         width: rem(10);
         height: rem(15);
         transform: rotate(90deg);
-      }
-      &::after {
       }
       &._active {
         &::after {

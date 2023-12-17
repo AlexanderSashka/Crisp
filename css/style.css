@@ -1055,6 +1055,16 @@ button {
     margin-bottom: 0rem;
   }
 }
+@media (max-width: 31.25em) {
+  .footer__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+}
 ._init .footer__title::after {
   content: "";
   position: absolute;
