@@ -276,11 +276,11 @@
       &::after {
         content: "";
         position: absolute;
-        top: 30%;
-        right: 0;
+        top: 25%;
+        right: rem(5);
         background: url("../img/icons/filter-arrow.svg") 0 0 / 100% no-repeat;
-        width: rem(13);
-        height: rem(25);
+        width: rem(15);
+        height: rem(25 );
         transition: all 0.3s;
         transform: rotate(-90deg);
       }

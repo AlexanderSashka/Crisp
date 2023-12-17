@@ -1905,10 +1905,10 @@ button {
 ._init .filter__spoller-title::after {
   content: "";
   position: absolute;
-  top: 30%;
-  right: 0;
+  top: 25%;
+  right: 0.3125rem;
   background: url("../img/icons/filter-arrow.svg") 0 0/100% no-repeat;
-  width: 0.8125rem;
+  width: 0.9375rem;
   height: 1.5625rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
