@@ -1295,10 +1295,10 @@ body {
     row-gap: rem(30);
     @media (max-width: em(991.98)) {
       justify-content: center;
-      // text-align: center;
     }
     @media (max-width: em(767.98)) {
       padding: rem(20) rem(0);
+      row-gap: rem(15);
     }
   }
 

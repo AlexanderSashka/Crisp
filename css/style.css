@@ -3921,6 +3921,7 @@ body {
 @media (max-width: 47.99875em) {
   .advantages__list {
     padding: 1.25rem 0rem;
+    row-gap: 0.9375rem;
   }
 }
 .advantages__item {
