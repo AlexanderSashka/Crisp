@@ -386,6 +386,9 @@
   opacity: 0;
   visibility: hidden;
   font-weight: 400;
+  @media (max-width: em(767.98)) {
+    right: -50%;
+  }
   &.sign-in-open {
     right: 0;
     opacity: 1;
